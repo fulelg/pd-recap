@@ -1,0 +1,1333 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Твой рекап в мафии на ПД за 2025</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --bg-alt: rgba(15, 23, 42, 0.75);
+            --primary: #facc15;
+            --primary-dark: #f59e0b;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+            --card: rgba(15, 23, 42, 0.55);
+            --border: rgba(148, 163, 184, 0.2);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            color: var(--text);
+            background: radial-gradient(120% 120% at 0% 0%, #1e293b 0%, #020617 55%, #000 100%);
+            min-height: 100vh;
+            padding: 60px 24px 120px;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1040px;
+            margin: 0 auto;
+        }
+
+        .form-section {
+            background: linear-gradient(135deg, rgba(250, 204, 21, 0.18), rgba(251, 191, 36, 0.05));
+            padding: 32px;
+            border-radius: 28px;
+            border: 1px solid rgba(250, 204, 21, 0.25);
+            margin-bottom: 40px;
+        }
+
+        .form-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            gap: 12px;
+            align-items: flex-end;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .form-group input {
+            flex: 1;
+            padding: 12px 16px;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            color: var(--text);
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .autocomplete-container {
+            position: relative;
+            flex: 1;
+        }
+
+        .autocomplete-list {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin-top: 4px;
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid var(--primary);
+            border-radius: 12px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+            display: none;
+            backdrop-filter: blur(10px);
+        }
+
+        .autocomplete-list.show {
+            display: block;
+        }
+
+        .autocomplete-item {
+            padding: 12px 16px;
+            cursor: pointer;
+            color: var(--text);
+            border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+            transition: background-color 0.2s;
+        }
+
+        .autocomplete-item:last-child {
+            border-bottom: none;
+        }
+
+        .autocomplete-item:hover,
+        .autocomplete-item.selected {
+            background: rgba(250, 204, 21, 0.15);
+            color: var(--primary);
+        }
+
+        .form-group button {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border: none;
+            border-radius: 12px;
+            color: #000;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .form-group button:hover {
+            transform: scale(1.05);
+        }
+
+        .form-group button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .error-message {
+            margin-top: 16px;
+            padding: 12px;
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid rgba(239, 68, 68, 0.4);
+            border-radius: 12px;
+            color: #fca5a5;
+        }
+
+        .recap-container {
+            display: none;
+        }
+
+        .recap-container.active {
+            display: block;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .hero-card {
+            background: linear-gradient(135deg, rgba(250, 204, 21, 0.18), rgba(251, 191, 36, 0.05));
+            padding: 28px;
+            border-radius: 28px;
+            border: 1px solid rgba(250, 204, 21, 0.25);
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .hero-card h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
+
+        .stat-grid {
+            margin-top: 48px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 32px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(37, 99, 235, 0.08));
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+
+        .stat-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            border-radius: 24px;
+            padding: 24px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(59, 130, 246, 0.5);
+        }
+
+        .stat-card:nth-child(1) {
+            border-color: rgba(59, 130, 246, 0.4);
+        }
+
+        .stat-card:nth-child(2) {
+            border-color: rgba(16, 185, 129, 0.4);
+        }
+
+        .stat-card:nth-child(3) {
+            border-color: rgba(139, 92, 246, 0.4);
+        }
+
+        .stat-card:nth-child(4) {
+            border-color: rgba(251, 146, 60, 0.4);
+        }
+
+        .stat-card:nth-child(5) {
+            border-color: rgba(236, 72, 153, 0.4);
+        }
+
+        .stat-card:nth-child(6) {
+            border-color: rgba(6, 182, 212, 0.4);
+        }
+
+        .stat-card h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            margin-bottom: 12px;
+        }
+
+        .stat-card strong {
+            font-size: 1.9rem;
+            font-weight: 700;
+        }
+
+        .stat-card p.muted {
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        .top10-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(250, 204, 21, 0.3), rgba(251, 191, 36, 0.2));
+            color: var(--primary);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-left: 8px;
+            border: 1px solid rgba(250, 204, 21, 0.4);
+        }
+
+        .title-section {
+            margin-top: 40px;
+            text-align: center;
+            padding: 48px 32px;
+            border-radius: 32px;
+            background: linear-gradient(135deg, rgba(100, 116, 139, 0.25), rgba(71, 85, 105, 0.15));
+            border: 2px solid rgba(100, 116, 139, 0.4);
+        }
+
+        /* Легенда раздела - яркий фиолетовый */
+        .title-section.legend {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.5), rgba(124, 58, 237, 0.35));
+            border-color: rgba(167, 139, 250, 0.8);
+            box-shadow: 0 8px 32px rgba(139, 92, 246, 0.3);
+        }
+
+        /* Жертва - яркий красный */
+        .title-section.victim {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.5), rgba(220, 38, 38, 0.35));
+            border-color: rgba(248, 113, 113, 0.8);
+            box-shadow: 0 8px 32px rgba(239, 68, 68, 0.3);
+        }
+
+        /* Мэр этого города - яркий зеленый */
+        .title-section.mayor {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.5), rgba(22, 163, 74, 0.35));
+            border-color: rgba(74, 222, 128, 0.8);
+            box-shadow: 0 8px 32px rgba(34, 197, 94, 0.3);
+        }
+
+        /* Гость раздела - серебристый */
+        .title-section.guest {
+            background: linear-gradient(135deg, rgba(148, 163, 184, 0.4), rgba(100, 116, 139, 0.3));
+            border-color: rgba(203, 213, 225, 0.7);
+            box-shadow: 0 8px 32px rgba(148, 163, 184, 0.2);
+        }
+
+        /* Везунчик лаки - яркий золотой */
+        .title-section.lucky {
+            background: linear-gradient(135deg, rgba(250, 204, 21, 0.6), rgba(245, 158, 11, 0.45));
+            border-color: rgba(253, 224, 71, 0.9);
+            box-shadow: 0 8px 32px rgba(250, 204, 21, 0.4);
+        }
+
+        /* Табличник - яркий синий */
+        .title-section.tablet {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.5), rgba(37, 99, 235, 0.35));
+            border-color: rgba(96, 165, 250, 0.8);
+            box-shadow: 0 8px 32px rgba(59, 130, 246, 0.3);
+        }
+
+        /* Игрок года - яркий оранжево-розовый */
+        .title-section.player-year {
+            background: linear-gradient(135deg, rgba(251, 146, 60, 0.5), rgba(249, 115, 22, 0.35));
+            border-color: rgba(253, 164, 175, 0.8);
+            box-shadow: 0 8px 32px rgba(251, 146, 60, 0.3);
+        }
+
+        .title-section h2 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--muted);
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .title-section.legend h2 {
+            color: #c4b5fd;
+        }
+
+        .title-section.victim h2 {
+            color: #fca5a5;
+        }
+
+        .title-section.mayor h2 {
+            color: #86efac;
+        }
+
+        .title-section.guest h2 {
+            color: #cbd5e1;
+        }
+
+        .title-section.lucky h2 {
+            color: #fde047;
+        }
+
+        .title-section.tablet h2 {
+            color: #93c5fd;
+        }
+
+        .title-section.player-year h2 {
+            color: #fdba74;
+        }
+
+        .title-section h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 0;
+            background: linear-gradient(135deg, #fff, rgba(255, 255, 255, 0.8));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Легенда раздела - яркий фиолетовый градиент */
+        .title-section.legend h1 {
+            background: linear-gradient(135deg, #e9d5ff, #c4b5fd, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(167, 139, 250, 0.5);
+        }
+
+        /* Жертва - яркий красный градиент */
+        .title-section.victim h1 {
+            background: linear-gradient(135deg, #fee2e2, #fca5a5, #f87171);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(248, 113, 113, 0.5);
+        }
+
+        /* Мэр этого города - яркий зеленый градиент */
+        .title-section.mayor h1 {
+            background: linear-gradient(135deg, #dcfce7, #86efac, #4ade80);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(74, 222, 128, 0.5);
+        }
+
+        /* Гость раздела - серебристый градиент */
+        .title-section.guest h1 {
+            background: linear-gradient(135deg, #f1f5f9, #cbd5e1, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 20px rgba(203, 213, 225, 0.4);
+        }
+
+        /* Везунчик лаки - яркий золотой градиент */
+        .title-section.lucky h1 {
+            background: linear-gradient(135deg, #fef9c3, #fde047, #facc15);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(253, 224, 71, 0.6);
+        }
+
+        /* Табличник - яркий синий градиент */
+        .title-section.tablet h1 {
+            background: linear-gradient(135deg, #dbeafe, #93c5fd, #60a5fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(96, 165, 250, 0.5);
+        }
+
+        /* Игрок года - яркий оранжево-розовый градиент */
+        .title-section.player-year h1 {
+            background: linear-gradient(135deg, #fed7aa, #fdba74, #fb923c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(253, 164, 175, 0.5);
+        }
+
+        .title-section .title-description {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: var(--muted);
+            line-height: 1.6;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title-section.legend .title-description {
+            color: #d8b4fe;
+        }
+
+        .title-section.victim .title-description {
+            color: #fecaca;
+        }
+
+        .title-section.mayor .title-description {
+            color: #bbf7d0;
+        }
+
+        .title-section.guest .title-description {
+            color: #e2e8f0;
+        }
+
+        .title-section.lucky .title-description {
+            color: #fef08a;
+        }
+
+        .title-section.tablet .title-description {
+            color: #bfdbfe;
+        }
+
+        .title-section.player-year .title-description {
+            color: #fed7aa;
+        }
+
+        .section {
+            margin-top: 52px;
+            padding: 32px;
+            border-radius: 24px;
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid rgba(148, 163, 184, 0.15);
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 22px;
+            font-weight: 700;
+        }
+
+        /* Цветовые схемы для секций */
+        .section.roles-section {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(124, 58, 237, 0.08));
+            border-color: rgba(139, 92, 246, 0.3);
+        }
+
+        .section.roles-section h2 {
+            color: #c4b5fd;
+        }
+
+        .section.factions-section {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.08));
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .section.factions-section h2 {
+            color: #6ee7b7;
+        }
+
+        .section.monthly-section {
+            background: linear-gradient(135deg, rgba(251, 146, 60, 0.15), rgba(249, 115, 22, 0.08));
+            border-color: rgba(251, 146, 60, 0.3);
+        }
+
+        .section.monthly-section h2 {
+            color: #fdba74;
+        }
+
+        .section.status-section {
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(219, 39, 119, 0.08));
+            border-color: rgba(236, 72, 153, 0.3);
+        }
+
+        .section.status-section h2 {
+            color: #f9a8d4;
+        }
+
+        .section.partners-section {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(8, 145, 178, 0.08));
+            border-color: rgba(6, 182, 212, 0.3);
+        }
+
+        .section.partners-section h2 {
+            color: #67e8f9;
+        }
+
+        .section.recent-section {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(79, 70, 229, 0.08));
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+
+        .section.recent-section h2 {
+            color: #a5b4fc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(15, 23, 42, 0.6);
+            /* border: 1px solid rgba(148, 163, 184, 0.2); */
+            border-radius: 22px;
+            overflow: hidden;
+        }
+
+        .section.roles-section table {
+            border-color: rgba(139, 92, 246, 0.3);
+        }
+
+        .section.roles-section table th {
+            background: rgba(139, 92, 246, 0.15);
+            color: #c4b5fd;
+        }
+
+        .section.monthly-section table {
+            border-color: rgba(251, 146, 60, 0.3);
+        }
+
+        .section.monthly-section table th {
+            background: rgba(251, 146, 60, 0.15);
+            color: #fdba74;
+        }
+
+        .section.partners-section table {
+            border-color: rgba(6, 182, 212, 0.3);
+        }
+
+        .section.partners-section table th {
+            background: rgba(6, 182, 212, 0.15);
+            color: #67e8f9;
+        }
+
+        .section.recent-section table {
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+
+        .section.recent-section table th {
+            background: rgba(99, 102, 241, 0.15);
+            color: #a5b4fc;
+        }
+
+        table th,
+        table td {
+            padding: 14px 18px;
+            text-align: left;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+        }
+
+        table tr:last-child td {
+            border-bottom: none;
+        }
+
+        table tbody tr {
+            transition: background-color 0.2s;
+        }
+
+        table tbody tr:hover {
+            background-color: rgba(148, 163, 184, 0.05);
+        }
+
+        .section.roles-section table tbody tr:hover {
+            background-color: rgba(139, 92, 246, 0.1);
+        }
+
+        .section.monthly-section table tbody tr:hover {
+            background-color: rgba(251, 146, 60, 0.1);
+        }
+
+        .section.partners-section table tbody tr:hover {
+            background-color: rgba(6, 182, 212, 0.1);
+        }
+
+        .section.recent-section table tbody tr:hover {
+            background-color: rgba(99, 102, 241, 0.1);
+        }
+
+        table th {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+        }
+
+        td.num {
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 16px;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(148, 163, 184, 0.25);
+            font-size: 0.95rem;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .pill strong {
+            color: var(--primary);
+            font-variant-numeric: tabular-nums;
+        }
+
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 16px;
+        }
+
+        .status-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(236, 72, 153, 0.3);
+            border-radius: 18px;
+            padding: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.95rem;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .status-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(236, 72, 153, 0.5);
+        }
+
+        .section.factions-section .pill {
+            border-color: rgba(16, 185, 129, 0.3);
+            background: rgba(15, 23, 42, 0.7);
+        }
+
+        .section.factions-section .pill:hover {
+            border-color: rgba(16, 185, 129, 0.5);
+            transform: translateY(-1px);
+        }
+
+        .section.factions-section .pill strong {
+            color: #6ee7b7;
+        }
+
+        /* Мирный житель - светло-зеленая гамма */
+        .pill.faction-peaceful {
+            background: linear-gradient(135deg, rgba(187, 247, 208, 0.2), rgba(134, 239, 172, 0.15));
+            border-color: rgba(134, 239, 172, 0.5);
+        }
+
+        .pill.faction-peaceful:hover {
+            border-color: rgba(134, 239, 172, 0.7);
+            background: linear-gradient(135deg, rgba(187, 247, 208, 0.3), rgba(134, 239, 172, 0.2));
+        }
+
+        .pill.faction-peaceful strong {
+            color: #86efac;
+        }
+
+        /* Мафия - красная гамма */
+        .pill.faction-mafia {
+            background: linear-gradient(135deg, rgba(254, 202, 202, 0.2), rgba(252, 165, 165, 0.15));
+            border-color: rgba(252, 165, 165, 0.5);
+        }
+
+        .pill.faction-mafia:hover {
+            border-color: rgba(252, 165, 165, 0.7);
+            background: linear-gradient(135deg, rgba(254, 202, 202, 0.3), rgba(252, 165, 165, 0.2));
+        }
+
+        .pill.faction-mafia strong {
+            color: #fca5a5;
+        }
+
+        /* Актив - ярко-зеленая гамма */
+        .pill.faction-active {
+            background: linear-gradient(135deg, rgba(110, 231, 183, 0.2), rgba(52, 211, 153, 0.15));
+            border-color: rgba(52, 211, 153, 0.5);
+        }
+
+        .pill.faction-active:hover {
+            border-color: rgba(52, 211, 153, 0.7);
+            background: linear-gradient(135deg, rgba(110, 231, 183, 0.3), rgba(52, 211, 153, 0.2));
+        }
+
+        .pill.faction-active strong {
+            color: #34d399;
+        }
+
+        /* Маньяк - фиолетовая гамма */
+        .pill.faction-maniac {
+            background: linear-gradient(135deg, rgba(221, 214, 254, 0.2), rgba(196, 181, 253, 0.15));
+            border-color: rgba(196, 181, 253, 0.5);
+        }
+
+        .pill.faction-maniac:hover {
+            border-color: rgba(196, 181, 253, 0.7);
+            background: linear-gradient(135deg, rgba(221, 214, 254, 0.3), rgba(196, 181, 253, 0.2));
+        }
+
+        .pill.faction-maniac strong {
+            color: #c4b5fd;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 40px 16px 80px;
+            }
+
+            .hero-card h1 {
+                font-size: 2rem;
+            }
+
+            table th,
+            table td {
+                padding: 12px 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="form-section">
+            <h2>🎄 Твой рекап в мафии на ПД за 2025</h2>
+            <form id="recapForm" onsubmit="generateRecap(event)">
+                <div class="form-group">
+                    <div class="autocomplete-container">
+                        <label for="playerName">Введите никнейм игрока:</label>
+                        <input type="text" id="playerName" name="playerName" placeholder="Например: dispersion" required
+                            autocomplete="off" />
+                        <div id="autocompleteList" class="autocomplete-list"></div>
+                    </div>
+                    <button type="submit" id="generateBtn">Сгенерировать рекап</button>
+                </div>
+                <div id="errorMessage" class="error-message" style="display: none;"></div>
+            </form>
+        </section>
+
+        <div id="recapContainer" class="recap-container"></div>
+    </div>
+
+    <script>
+        let playersData = null;
+
+        // Загружаем JSON при загрузке страницы
+        async function loadData() {
+            try {
+                const response = await fetch('players_recap_data_2025.json');
+                if (!response.ok) {
+                    throw new Error('Не удалось загрузить данные');
+                }
+                playersData = await response.json();
+                console.log('Данные загружены:', playersData.players ? Object.keys(playersData.players).length : 0,
+                    'игроков');
+                return Promise.resolve();
+            } catch (error) {
+                console.error('Ошибка загрузки данных:', error);
+                showError(
+                    'Не удалось загрузить данные. Убедитесь, что файл players_recap_data_2025.json доступен.');
+                return Promise.reject(error);
+            }
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('errorMessage');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+            setTimeout(() => {
+                errorDiv.style.display = 'none';
+            }, 5000);
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function formatMonth(ym) {
+            const months = {
+                '01': 'Январь',
+                '02': 'Февраль',
+                '03': 'Март',
+                '04': 'Апрель',
+                '05': 'Май',
+                '06': 'Июнь',
+                '07': 'Июль',
+                '08': 'Август',
+                '09': 'Сентябрь',
+                '10': 'Октябрь',
+                '11': 'Ноябрь',
+                '12': 'Декабрь'
+            };
+            const [year, month] = ym.split('-');
+            return `${months[month] || month} ${year}`;
+        }
+
+        function getTitleDescription(title) {
+            const descriptions = {
+                'Легенда раздела': 'Твой общий винрейт 55% и выше — ты настоящий мастер игры! Показываешь стабильно высокие результаты и умеешь побеждать.',
+                'Жертва': 'У тебя самый высокий процент выгонов на дневном голосовании. Тебя чаще всего отправляли в отставку, но ты не сдавался!',
+                'Мэр этого города': 'Лучший винрейт на роли мирного жителя (минимум 10 игр). Ты мастер выживания и логики, когда играешь за мирных!',
+                'Гость раздела': 'Сыграл меньше 5 игр за год. Ты только начинаешь свой путь в мафии — впереди ещё много интересного!',
+                'Везунчик лаки': 'У тебя самый длинный винстрик за год. Ты знаешь секрет победы и умеешь держать удачу!',
+                'Табличник': 'Провёл больше всего игр на ведущем. Ты — сердце раздела, без тебя игры бы не состоялись!',
+                'Игрок года': 'Активный участник раздела, который провёл год в мафии. Каждая игра — это опыт, каждая победа — достижение!'
+            };
+            return descriptions[title] || 'Ты провёл год в мафии, и это уже достижение!';
+        }
+
+        function generateRecap(event) {
+            event.preventDefault();
+
+            if (!playersData) {
+                showError('Данные еще не загружены. Подождите...');
+                return;
+            }
+
+            const playerName = document.getElementById('playerName').value.trim();
+            const container = document.getElementById('recapContainer');
+            const btn = document.getElementById('generateBtn');
+
+            btn.disabled = true;
+            btn.textContent = 'Загрузка...';
+
+            // Ищем игрока (без учета регистра)
+            const player = Object.values(playersData.players).find(
+                p => p.name.toLowerCase() === playerName.toLowerCase()
+            );
+
+            if (!player) {
+                showError(`Игрок "${playerName}" попуск и не играл в мафию в 2025 году.`);
+                btn.disabled = false;
+                btn.textContent = 'Сгенерировать рекап';
+                return;
+            }
+
+            // Генерируем HTML рекапа
+            const html = generateRecapHTML(player);
+            container.innerHTML = html;
+            container.classList.add('active');
+
+            // Прокручиваем к рекапу
+            container.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+
+            btn.disabled = false;
+            btn.textContent = 'Сгенерировать рекап';
+        }
+
+        function generateRecapHTML(player) {
+            const factions = player.factions || [];
+            const monthly = player.monthly || [];
+            const statuses = player.statuses || [];
+            const partners = player.partners || [];
+            const recentGames = player.recent_games || [];
+            const roles = player.roles || {
+                by_faction: {},
+                total: 0,
+                mafia: 0,
+                active: 0,
+                maniac: 0
+            };
+
+            // Вычитаем 1 из общего количества ролей, если есть роль "Мирный житель"
+            if (roles.by_faction && roles.by_faction['Мирный житель'] > 0) {
+                roles.total = Math.max(0, roles.total - 1);
+            }
+
+            // Фракции для таблицы ролей (МЖ, Актив, Мафия, Маньяк)
+            const factionMap = {
+                'Мирный житель': 'Мирный житель',
+                'Актив': 'Актив',
+                'Мафия': 'Мафия',
+                'Маньяк': 'Маньяк'
+            };
+            const rolesTable = [];
+            for (const [key, label] of Object.entries(factionMap)) {
+                const faction = factions.find(f => f.name === key);
+                rolesTable.push({
+                    name: label,
+                    games: faction ? faction.games : 0,
+                    wins: faction ? faction.wins : 0,
+                    win_rate: faction ? faction.win_rate : 0
+                });
+            }
+
+            // Помесячная статистика
+            const monthlyRows = monthly.map(m => `
+        <tr>
+          <td>${escapeHtml(formatMonth(m.month))}</td>
+          <td class="num">${m.games}</td>
+          <td class="num">${m.wins}</td>
+          <td class="num">${m.win_rate.toFixed(0)}%</td>
+        </tr>
+      `).join('');
+
+            // Статусы
+            const statusCards = statuses.map(s => `
+        <div class="status-card">
+          <span>${escapeHtml(s.name)}</span>
+          <strong>${s.count}</strong>
+        </div>
+      `).join('');
+
+            // Фракции (пилюли)
+            function getFactionClass(factionName) {
+                const name = factionName.toLowerCase();
+                if (name.includes('мирный') || name.includes('мирный житель')) {
+                    return 'faction-peaceful';
+                } else if (name.includes('мафия')) {
+                    return 'faction-mafia';
+                } else if (name.includes('актив')) {
+                    return 'faction-active';
+                } else if (name.includes('маньяк')) {
+                    return 'faction-maniac';
+                }
+                return '';
+            }
+
+            const factionPills = factions.map(f => {
+                const factionClass = getFactionClass(f.name);
+                return `
+        <div class="pill ${factionClass}">
+          <span>${escapeHtml(f.name)}</span>
+          <strong>${f.win_rate.toFixed(0)}%</strong>
+        </div>
+      `;
+            }).join('');
+
+            // Напарники
+            const partnerRows = partners.map(p => `
+        <tr>
+          <td>${escapeHtml(p.name)}</td>
+          <td class="num">${p.games_together}</td>
+          <td class="num">${p.shared_wins}</td>
+          <td class="num">${p.win_rate.toFixed(0)}%</td>
+        </tr>
+      `).join('');
+
+            // Последние игры
+            const recentRows = recentGames.map(g => `
+        <tr>
+          <td>${escapeHtml(g.date)}</td>
+          <td>${escapeHtml(g.name)}</td>
+          <td>${escapeHtml(g.role)}</td>
+          <td>${escapeHtml(g.faction)}</td>
+          <td>${escapeHtml(g.status)}</td>
+          <td class="num">${g.day ? escapeHtml(String(g.day)) : '—'}</td>
+          <td>${escapeHtml(g.result)}</td>
+        </tr>
+      `).join('');
+
+            // Роли таблица
+            const rolesRows = rolesTable.map(r => `
+        <tr>
+          <td>${escapeHtml(r.name)}</td>
+          <td class="num">${r.games}</td>
+          <td class="num">${r.wins}</td>
+          <td class="num">${r.win_rate.toFixed(0)}%</td>
+        </tr>
+      `).join('');
+
+            const dayStats = player.day_stats || {};
+            const avgDay = dayStats.avg_day ? dayStats.avg_day.toFixed(1) : '—';
+            const dayRange = dayStats.min_day && dayStats.max_day ?
+                `от дня ${dayStats.min_day} до дня ${dayStats.max_day}` :
+                'нет данных';
+
+            const top10Badge = player.is_top10 ?
+                '<span class="top10-badge">Топ-10</span>' :
+                '';
+
+            // Определяем класс для секции звания
+            let titleClass = player.title_class || '';
+            if (!titleClass && (player.title === 'Игрок года' || !player.title)) {
+                titleClass = 'player-year';
+            }
+
+            return `
+        <header class="hero">
+          <div class="hero-card">
+            <h1>Holiday Recap 2025 · ${escapeHtml(player.name)}</h1>
+            <div class="hero-meta">
+              <span>🎄 Сезон игр 2025</span>
+            </div>
+          </div>
+        </header>
+
+        <section class="title-section ${titleClass}">
+          <h2>КТО ТЫ ПО ИТОГАМ ГОДА В МАФИИ</h2>
+          <h1>${escapeHtml(player.title || 'Еще не определился')}</h1>
+          <p class="title-description">${escapeHtml(getTitleDescription(player.title || 'Еще не определился'))}</p>
+        </section>
+
+        <section class="stat-grid">
+          <div class="stat-card">
+            <h3>Сыграно игр</h3>
+            <strong>${player.games_total}${top10Badge}</strong>
+            <p class="muted">Всего матчей за год</p>
+          </div>
+          <div class="stat-card">
+            <h3>Винрейт общий</h3>
+            <strong>${player.win_rate.toFixed(0)}%</strong>
+            <p class="muted">${player.wins_total} побед из ${player.games_total} игр</p>
+          </div>
+          <div class="stat-card">
+            <h3>Количество ролей</h3>
+            <strong>${roles.total}</strong>
+            <p class="muted">Маф: ${roles.mafia}, Актив: ${roles.active}, Ман: ${roles.maniac}</p>
+          </div>
+          <div class="stat-card">
+            <h3>Лучший стрик</h3>
+            <strong>${player.streaks.longest_win}</strong>
+            <p class="muted">Текущий стрик: ${player.streaks.current_win}</p>
+          </div>
+          <div class="stat-card">
+            <h3>Самый долгий провал</h3>
+            <strong>${player.streaks.longest_loss}</strong>
+            <p class="muted">Игры подряд без побед</p>
+          </div>
+          <div class="stat-card">
+            <h3>Проведено игр</h3>
+            <strong>${player.games_mastered || 0}</strong>
+            <p class="muted">В качестве ведущего</p>
+          </div>
+        </section>
+
+        <section class="section roles-section">
+          <h2>🃏 Роли года</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Роль</th>
+                <th class="num">Игры</th>
+                <th class="num">Победы</th>
+                <th class="num">Win%</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rolesRows}
+            </tbody>
+          </table>
+        </section>
+
+        <section class="section factions-section">
+          <h2>🏳️ Фракции</h2>
+          <div class="pills">
+            ${factionPills}
+          </div>
+        </section>
+
+        <section class="section monthly-section">
+          <h2>📈 Помесячная активность</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Месяц</th>
+                <th class="num">Игры</th>
+                <th class="num">Победы</th>
+                <th class="num">Win%</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${monthlyRows}
+            </tbody>
+          </table>
+        </section>
+
+        <section class="section status-section">
+          <h2>🛡️ Как заканчивались игры</h2>
+          <div class="status-grid">
+            ${statusCards}
+          </div>
+          <p style="margin-top:16px;color:var(--muted);">
+            Средний день выбытия: <strong>${avgDay}</strong>, ${dayRange}
+          </p>
+        </section>
+
+        ${partners.length > 0 ? `
+        <section class="section partners-section">
+          <h2>🤝 Праздничная пятёрка тиммейтов</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Игрок</th>
+                <th class="num">Совместных игр</th>
+                <th class="num">Побед</th>
+                <th class="num">Win%</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${partnerRows}
+            </tbody>
+          </table>
+        </section>
+        ` : ''}
+
+        ${recentGames.length > 0 ? `
+        <section class="section recent-section">
+          <h2>📜 Последние матчи</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Дата</th>
+                <th>Игра</th>
+                <th>Роль</th>
+                <th>Фракция</th>
+                <th>Статус</th>
+                <th class="num">День</th>
+                <th>Итог</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${recentRows}
+            </tbody>
+          </table>
+        </section>
+        ` : ''}
+
+        <footer>
+          Работал за спасибо Fulelgupport и Dispersion
+        </footer>
+      `;
+        }
+
+        // Автодополнение для поля ввода
+        let selectedIndex = -1;
+        let filteredPlayers = [];
+
+        function getPlayerList() {
+            if (!playersData || !playersData.players) return [];
+            return Object.values(playersData.players).map(p => p.name).sort();
+        }
+
+        function filterPlayers(query) {
+            if (!query || query.length < 1) return [];
+            const allPlayers = getPlayerList();
+            const lowerQuery = query.toLowerCase();
+            return allPlayers.filter(name =>
+                name.toLowerCase().includes(lowerQuery)
+            ).slice(0, 10); // Показываем максимум 10 результатов
+        }
+
+        function showAutocomplete(query) {
+            const list = document.getElementById('autocompleteList');
+            if (!list) return;
+
+            filteredPlayers = filterPlayers(query);
+            selectedIndex = -1;
+
+            if (filteredPlayers.length === 0) {
+                list.classList.remove('show');
+                return;
+            }
+
+            list.innerHTML = filteredPlayers.map((name, index) =>
+                `<div class="autocomplete-item" data-index="${index}">${escapeHtml(name)}</div>`
+            ).join('');
+
+            list.classList.add('show');
+
+            // Добавляем обработчики кликов
+            list.querySelectorAll('.autocomplete-item').forEach((item, index) => {
+                item.addEventListener('click', () => {
+                    selectPlayer(filteredPlayers[index]);
+                });
+            });
+        }
+
+        function hideAutocomplete() {
+            const list = document.getElementById('autocompleteList');
+            if (list) {
+                list.classList.remove('show');
+            }
+            selectedIndex = -1;
+        }
+
+        function selectPlayer(name) {
+            const input = document.getElementById('playerName');
+            if (input) {
+                input.value = name;
+            }
+            hideAutocomplete();
+        }
+
+        function navigateAutocomplete(direction) {
+            if (filteredPlayers.length === 0) return;
+
+            if (direction === 'down') {
+                selectedIndex = Math.min(selectedIndex + 1, filteredPlayers.length - 1);
+            } else if (direction === 'up') {
+                selectedIndex = Math.max(selectedIndex - 1, -1);
+            }
+
+            const items = document.querySelectorAll('.autocomplete-item');
+            items.forEach((item, index) => {
+                item.classList.toggle('selected', index === selectedIndex);
+            });
+
+            if (selectedIndex >= 0 && items[selectedIndex]) {
+                items[selectedIndex].scrollIntoView({
+                    block: 'nearest'
+                });
+            }
+        }
+
+        // Инициализация автодополнения
+        function initAutocomplete() {
+            const input = document.getElementById('playerName');
+            if (!input) return;
+
+            input.addEventListener('input', (e) => {
+                const query = e.target.value.trim();
+                if (query.length > 0) {
+                    showAutocomplete(query);
+                } else {
+                    hideAutocomplete();
+                }
+            });
+
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    navigateAutocomplete('down');
+                } else if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    navigateAutocomplete('up');
+                } else if (e.key === 'Enter' && selectedIndex >= 0) {
+                    e.preventDefault();
+                    selectPlayer(filteredPlayers[selectedIndex]);
+                } else if (e.key === 'Escape') {
+                    hideAutocomplete();
+                }
+            });
+
+            // Скрываем список при клике вне его
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.autocomplete-container')) {
+                    hideAutocomplete();
+                }
+            });
+
+            // Скрываем список при потере фокуса
+            input.addEventListener('blur', () => {
+                // Небольшая задержка, чтобы клик по элементу списка успел обработаться
+                setTimeout(() => hideAutocomplete(), 200);
+            });
+        }
+
+        // Загружаем данные при загрузке страницы
+        window.addEventListener('DOMContentLoaded', () => {
+            loadData().then(() => {
+                initAutocomplete();
+            });
+        });
+    </script>
+</body>
+
+</html>
