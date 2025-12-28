@@ -4,14 +4,14 @@
     "start": "2025-01-01",
     "end": "2026-01-01"
   },
-  "generated_at": "2025-12-25T20:41:19.687701",
+  "generated_at": "2025-12-28T20:49:26.843040",
   "players": {
     "10": {
       "id": 10,
       "name": "Waro",
-      "games_total": 21,
-      "wins_total": 11,
-      "win_rate": 52.4,
+      "games_total": 22,
+      "wins_total": 12,
+      "win_rate": 54.5,
       "factions": [
         {
           "name": "Мирный житель",
@@ -21,9 +21,9 @@
         },
         {
           "name": "Актив",
-          "games": 5,
-          "wins": 1,
-          "win_rate": 20.0
+          "games": 6,
+          "wins": 2,
+          "win_rate": 33.3
         },
         {
           "name": "Мафия",
@@ -104,12 +104,18 @@
           "games": 3,
           "wins": 1,
           "win_rate": 33.3
+        },
+        {
+          "month": "2025-12",
+          "games": 1,
+          "wins": 1,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
         {
           "name": "Выживший",
-          "count": 10
+          "count": 11
         },
         {
           "name": "Убит мафией",
@@ -136,30 +142,30 @@
       },
       "roles": {
         "by_faction": {
-          "Актив": 4,
+          "Актив": 5,
           "Маньяк": 2,
           "Мафия": 5,
           "Мирный житель": 1
         },
-        "total": 12,
+        "total": 13,
         "mafia": 5,
-        "active": 4,
+        "active": 5,
         "maniac": 2
       },
       "partners": [
         {
-          "id": 302,
-          "name": "BRA_HAYFA",
-          "games_together": 9,
+          "id": 468,
+          "name": "-trickster-",
+          "games_together": 4,
           "shared_wins": 3,
-          "win_rate": 33.3
+          "win_rate": 75.0
         },
         {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 8,
-          "shared_wins": 4,
-          "win_rate": 50.0
+          "id": 424,
+          "name": "KyKyLLLka",
+          "games_together": 4,
+          "shared_wins": 3,
+          "win_rate": 75.0
         },
         {
           "id": 295,
@@ -176,19 +182,29 @@
           "win_rate": 71.4
         },
         {
-          "id": 483,
-          "name": "Mr Scuf",
-          "games_together": 7,
-          "shared_wins": 3,
-          "win_rate": 42.9
+          "id": 432,
+          "name": "Shyrik",
+          "games_together": 6,
+          "shared_wins": 4,
+          "win_rate": 66.7
         }
       ],
       "streaks": {
         "longest_win": 2,
-        "current_win": 1,
+        "current_win": 2,
         "longest_loss": 3
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Актив",
+          "role": "Король Червей",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -228,23 +244,88 @@
           "faction": "Актив",
           "role": "Кэйлен Амнел, исповедница",
           "result": "Поражение"
-        },
+        }
+      ],
+      "games_mastered": 1,
+      "rank": 2,
+      "is_top10": true,
+      "posts_count": 5963,
+      "banished_rate": 13.6,
+      "loot_rate": 27.3,
+      "unique_setos": 19,
+      "title": "Мэр этого города",
+      "title_class": "mayor"
+    },
+    "13": {
+      "id": 13,
+      "name": "Hekkoo",
+      "games_total": 1,
+      "wins_total": 0,
+      "win_rate": 0.0,
+      "factions": [
         {
-          "game_id": "606",
-          "date": "2025-10-14",
-          "name": "Мафия 572. Под нами мель(лужи) | НОЧИ В 21:00 ПО М...",
-          "day": null,
-          "status": "Выживший",
-          "faction": "Маньяк",
-          "role": "Маньяк",
-          "result": "Победа"
+          "name": "Мафия",
+          "games": 1,
+          "wins": 0,
+          "win_rate": 0.0
+        }
+      ],
+      "monthly": [
+        {
+          "month": "2025-12",
+          "games": 1,
+          "wins": 0,
+          "win_rate": 0.0
+        }
+      ],
+      "statuses": [
+        {
+          "name": "Умер",
+          "count": 1
+        }
+      ],
+      "day_stats": {
+        "with_day": 1,
+        "avg_day": 5.0,
+        "min_day": 5,
+        "max_day": 5
+      },
+      "roles": {
+        "by_faction": {
+          "Мафия": 1
+        },
+        "total": 1,
+        "mafia": 1,
+        "active": 0,
+        "maniac": 0
+      },
+      "partners": [],
+      "streaks": {
+        "longest_win": 0,
+        "current_win": 0,
+        "longest_loss": 1
+      },
+      "recent_games": [
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "5",
+          "status": "Умер",
+          "faction": "Мафия",
+          "role": "Томас Хэнкок «Сапер»",
+          "result": "Поражение"
         }
       ],
       "games_mastered": 0,
-      "rank": 3,
-      "is_top10": true,
-      "title": "Мэр этого города",
-      "title_class": "mayor"
+      "rank": 59,
+      "is_top10": false,
+      "posts_count": 0,
+      "banished_rate": 0.0,
+      "loot_rate": 0.0,
+      "unique_setos": 1,
+      "title": "Гость раздела",
+      "title_class": "guest"
     },
     "21": {
       "id": 21,
@@ -350,20 +431,6 @@
           "games_together": 3,
           "shared_wins": 1,
           "win_rate": 33.3
-        },
-        {
-          "id": 280,
-          "name": "chbr",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
-        },
-        {
-          "id": 483,
-          "name": "Mr Scuf",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
         }
       ],
       "streaks": {
@@ -424,27 +491,31 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 27,
+      "rank": 35,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 2284,
+      "banished_rate": 20.0,
+      "loot_rate": 20.0,
+      "unique_setos": 5,
+      "title": "Цель теневой координации",
+      "title_class": "shadow-target"
     },
     "31": {
       "id": 31,
       "name": "ggaspar",
-      "games_total": 15,
-      "wins_total": 4,
-      "win_rate": 26.7,
+      "games_total": 17,
+      "wins_total": 5,
+      "win_rate": 29.4,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 9,
-          "wins": 4,
-          "win_rate": 44.4
+          "games": 10,
+          "wins": 5,
+          "win_rate": 50.0
         },
         {
           "name": "Мафия",
-          "games": 4,
+          "games": 5,
           "wins": 0,
           "win_rate": 0.0
         },
@@ -515,12 +586,18 @@
           "games": 3,
           "wins": 1,
           "win_rate": 33.3
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 1,
+          "win_rate": 50.0
         }
       ],
       "statuses": [
         {
           "name": "Выгнан",
-          "count": 6
+          "count": 7
         },
         {
           "name": "Выживший",
@@ -528,7 +605,7 @@
         },
         {
           "name": "Убит мафией",
-          "count": 2
+          "count": 3
         },
         {
           "name": "Умер от ивента",
@@ -540,29 +617,36 @@
         }
       ],
       "day_stats": {
-        "with_day": 10,
-        "avg_day": 3.8,
+        "with_day": 12,
+        "avg_day": 3.58,
         "min_day": 1,
         "max_day": 10
       },
       "roles": {
         "by_faction": {
           "Актив": 2,
-          "Мафия": 4,
+          "Мафия": 5,
           "Мирный житель": 1
         },
-        "total": 7,
-        "mafia": 4,
+        "total": 8,
+        "mafia": 5,
         "active": 2,
         "maniac": 0
       },
       "partners": [
         {
-          "id": 432,
-          "name": "Shyrik",
-          "games_together": 9,
-          "shared_wins": 3,
-          "win_rate": 33.3
+          "id": 212,
+          "name": "Francyz",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
+        },
+        {
+          "id": 79,
+          "name": "ЖУМОНГ",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
         },
         {
           "id": 295,
@@ -572,33 +656,46 @@
           "win_rate": 50.0
         },
         {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 8,
+          "id": 10,
+          "name": "Waro",
+          "games_together": 6,
           "shared_wins": 3,
-          "win_rate": 37.5
+          "win_rate": 50.0
         },
         {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 8,
+          "id": 218,
+          "name": "Cryless",
+          "games_together": 4,
           "shared_wins": 2,
-          "win_rate": 25.0
-        },
-        {
-          "id": 135,
-          "name": "Bararym",
-          "games_together": 7,
-          "shared_wins": 2,
-          "win_rate": 28.6
+          "win_rate": 50.0
         }
       ],
       "streaks": {
-        "longest_win": 1,
-        "current_win": 1,
+        "longest_win": 2,
+        "current_win": 0,
         "longest_loss": 7
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": "1",
+          "status": "Выгнан",
+          "faction": "Мафия",
+          "role": "Король Пик",
+          "result": "Поражение"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "4",
+          "status": "Убит мафией",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -628,41 +725,31 @@
           "faction": "Мафия",
           "role": "Канретад Совершенный",
           "result": "Поражение"
-        },
-        {
-          "game_id": "607",
-          "date": "2025-10-27",
-          "name": "Мафия 573. Ночь Дочь Мечь | НОЧИ В 21:00 ПО МСК",
-          "day": "2",
-          "status": "Умер в клетке",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
-        },
-        {
-          "game_id": "606",
-          "date": "2025-10-14",
-          "name": "Мафия 572. Под нами мель(лужи) | НОЧИ В 21:00 ПО М...",
-          "day": "1",
-          "status": "Выгнан",
-          "faction": "Мафия",
-          "role": "Дон",
-          "result": "Поражение"
         }
       ],
       "games_mastered": 0,
       "rank": 10,
       "is_top10": true,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 0,
+      "banished_rate": 41.2,
+      "loot_rate": 35.3,
+      "unique_setos": 15,
+      "title": "Мэр этого города",
+      "title_class": "mayor"
     },
     "66": {
       "id": 66,
       "name": "NaniQue-",
-      "games_total": 3,
-      "wins_total": 2,
-      "win_rate": 66.7,
+      "games_total": 4,
+      "wins_total": 3,
+      "win_rate": 75.0,
       "factions": [
+        {
+          "name": "Мирный житель",
+          "games": 2,
+          "wins": 2,
+          "win_rate": 100.0
+        },
         {
           "name": "Актив",
           "games": 1,
@@ -671,12 +758,6 @@
         },
         {
           "name": "Мафия",
-          "games": 1,
-          "wins": 1,
-          "win_rate": 100.0
-        },
-        {
-          "name": "Мирный житель",
           "games": 1,
           "wins": 1,
           "win_rate": 100.0
@@ -694,12 +775,18 @@
           "games": 2,
           "wins": 1,
           "win_rate": 50.0
+        },
+        {
+          "month": "2025-12",
+          "games": 1,
+          "wins": 1,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
         {
           "name": "Выживший",
-          "count": 2
+          "count": 3
         },
         {
           "name": "Молния",
@@ -725,47 +812,29 @@
       },
       "partners": [
         {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
-        },
-        {
-          "id": 478,
-          "name": "Пташка",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
-        },
-        {
-          "id": 484,
-          "name": "эквилибристика",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
-        },
-        {
           "id": 135,
           "name": "Bararym",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        },
-        {
-          "id": 295,
-          "name": "Leibster",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
         }
       ],
       "streaks": {
-        "longest_win": 1,
-        "current_win": 1,
+        "longest_win": 2,
+        "current_win": 2,
         "longest_loss": 1
       },
       "recent_games": [
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -798,23 +867,27 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 42,
+      "rank": 44,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 3145,
+      "banished_rate": 0.0,
+      "loot_rate": 0.0,
+      "unique_setos": 4,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     },
     "79": {
       "id": 79,
       "name": "ЖУМОНГ",
-      "games_total": 5,
-      "wins_total": 3,
-      "win_rate": 60.0,
+      "games_total": 7,
+      "wins_total": 5,
+      "win_rate": 71.4,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 3,
-          "wins": 2,
-          "win_rate": 66.7
+          "games": 5,
+          "wins": 4,
+          "win_rate": 80.0
         },
         {
           "name": "Актив",
@@ -841,6 +914,12 @@
           "games": 3,
           "wins": 2,
           "win_rate": 66.7
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 2,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
@@ -850,14 +929,18 @@
         },
         {
           "name": "Выживший",
+          "count": 2
+        },
+        {
+          "name": "Умер",
           "count": 1
         }
       ],
       "day_stats": {
-        "with_day": 4,
-        "avg_day": 2.0,
+        "with_day": 5,
+        "avg_day": 2.6,
         "min_day": 1,
-        "max_day": 3
+        "max_day": 5
       },
       "roles": {
         "by_faction": {
@@ -871,47 +954,67 @@
       },
       "partners": [
         {
-          "id": 476,
-          "name": "Soroka_",
+          "id": 469,
+          "name": "Aferus",
           "games_together": 3,
           "shared_wins": 3,
           "win_rate": 100.0
         },
         {
-          "id": 443,
-          "name": "Eva",
+          "id": 483,
+          "name": "Mr Scuf",
           "games_together": 3,
-          "shared_wins": 2,
-          "win_rate": 66.7
+          "shared_wins": 3,
+          "win_rate": 100.0
         },
         {
-          "id": 250,
-          "name": "toouur",
+          "id": 207,
+          "name": "PIRO48",
           "games_together": 3,
-          "shared_wins": 2,
-          "win_rate": 66.7
+          "shared_wins": 3,
+          "win_rate": 100.0
         },
         {
-          "id": 259,
-          "name": "xaxain",
+          "id": 252,
+          "name": "pnanrkotikivj",
           "games_together": 3,
-          "shared_wins": 2,
-          "win_rate": 66.7
+          "shared_wins": 3,
+          "win_rate": 100.0
         },
         {
-          "id": 295,
-          "name": "Leibster",
+          "id": 476,
+          "name": "Soroka_",
           "games_together": 3,
-          "shared_wins": 1,
-          "win_rate": 33.3
+          "shared_wins": 3,
+          "win_rate": 100.0
         }
       ],
       "streaks": {
-        "longest_win": 1,
-        "current_win": 1,
+        "longest_win": 3,
+        "current_win": 3,
         "longest_loss": 1
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "5",
+          "status": "Умер",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -941,31 +1044,15 @@
           "faction": "Мирный житель",
           "role": "Мирный житель",
           "result": "Победа"
-        },
-        {
-          "game_id": "597",
-          "date": "2025-02-09",
-          "name": "Мафия 556 Игра в Кальмара НОЧИ В 21:00!!!",
-          "day": "3",
-          "status": "Убит мафией",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
-        },
-        {
-          "game_id": "588",
-          "date": "2025-01-08",
-          "name": "БЕЗУМНО МОЖНО БЫТЬ В ФИНАЛИССИМЕ 2024! Мафия №555....",
-          "day": "1",
-          "status": "Убит мафией",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Победа"
         }
       ],
       "games_mastered": 2,
-      "rank": 28,
+      "rank": 25,
       "is_top10": false,
+      "posts_count": 2197,
+      "banished_rate": 0.0,
+      "loot_rate": 57.1,
+      "unique_setos": 6,
       "title": "Легенда раздела",
       "title_class": "legend"
     },
@@ -1031,10 +1118,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 58,
+      "rank": 60,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 189,
+      "banished_rate": 100.0,
+      "loot_rate": 0.0,
+      "unique_setos": 1,
+      "title": "Жертва",
+      "title_class": "victim"
     },
     "95": {
       "id": 95,
@@ -1166,6 +1257,20 @@
       },
       "partners": [
         {
+          "id": 332,
+          "name": "dispersion",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
+        },
+        {
+          "id": 193,
+          "name": "Whats_Up4you",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
+        },
+        {
           "id": 465,
           "name": "Lightovych",
           "games_together": 5,
@@ -1180,25 +1285,11 @@
           "win_rate": 75.0
         },
         {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 4,
-          "shared_wins": 2,
-          "win_rate": 50.0
-        },
-        {
-          "id": 432,
-          "name": "Shyrik",
-          "games_together": 4,
-          "shared_wins": 2,
-          "win_rate": 50.0
-        },
-        {
-          "id": 332,
-          "name": "dispersion",
+          "id": 483,
+          "name": "Mr Scuf",
           "games_together": 3,
-          "shared_wins": 3,
-          "win_rate": 100.0
+          "shared_wins": 2,
+          "win_rate": 66.7
         }
       ],
       "streaks": {
@@ -1259,10 +1350,85 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 15,
+      "rank": 16,
       "is_top10": false,
+      "posts_count": 4693,
+      "banished_rate": 8.3,
+      "loot_rate": 33.3,
+      "unique_setos": 12,
       "title": "Легенда раздела",
       "title_class": "legend"
+    },
+    "102": {
+      "id": 102,
+      "name": "Avrilka",
+      "games_total": 1,
+      "wins_total": 0,
+      "win_rate": 0.0,
+      "factions": [
+        {
+          "name": "Мафия",
+          "games": 1,
+          "wins": 0,
+          "win_rate": 0.0
+        }
+      ],
+      "monthly": [
+        {
+          "month": "2025-12",
+          "games": 1,
+          "wins": 0,
+          "win_rate": 0.0
+        }
+      ],
+      "statuses": [
+        {
+          "name": "Выгнан",
+          "count": 1
+        }
+      ],
+      "day_stats": {
+        "with_day": 1,
+        "avg_day": 6.0,
+        "min_day": 6,
+        "max_day": 6
+      },
+      "roles": {
+        "by_faction": {
+          "Мафия": 1
+        },
+        "total": 1,
+        "mafia": 1,
+        "active": 0,
+        "maniac": 0
+      },
+      "partners": [],
+      "streaks": {
+        "longest_win": 0,
+        "current_win": 0,
+        "longest_loss": 1
+      },
+      "recent_games": [
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "6",
+          "status": "Выгнан",
+          "faction": "Мафия",
+          "role": "Поль Толедо «Вор»",
+          "result": "Поражение"
+        }
+      ],
+      "games_mastered": 0,
+      "rank": 61,
+      "is_top10": false,
+      "posts_count": 0,
+      "banished_rate": 100.0,
+      "loot_rate": 0.0,
+      "unique_setos": 1,
+      "title": "Жертва",
+      "title_class": "victim"
     },
     "111": {
       "id": 111,
@@ -1326,29 +1492,33 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 59,
+      "rank": 62,
       "is_top10": false,
+      "posts_count": 182,
+      "banished_rate": 0.0,
+      "loot_rate": 0.0,
+      "unique_setos": 1,
       "title": "Гость раздела",
       "title_class": "guest"
     },
     "135": {
       "id": 135,
       "name": "Bararym",
-      "games_total": 14,
-      "wins_total": 5,
-      "win_rate": 35.7,
+      "games_total": 16,
+      "wins_total": 7,
+      "win_rate": 43.8,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 7,
-          "wins": 2,
-          "win_rate": 28.6
+          "games": 8,
+          "wins": 3,
+          "win_rate": 37.5
         },
         {
           "name": "Актив",
-          "games": 6,
-          "wins": 3,
-          "win_rate": 50.0
+          "games": 7,
+          "wins": 4,
+          "win_rate": 57.1
         },
         {
           "name": "Мафия",
@@ -1405,12 +1575,18 @@
           "games": 3,
           "wins": 2,
           "win_rate": 66.7
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 2,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
         {
           "name": "Выживший",
-          "count": 5
+          "count": 7
         },
         {
           "name": "Убит маньяком",
@@ -1433,29 +1609,43 @@
       },
       "roles": {
         "by_faction": {
-          "Актив": 6,
+          "Актив": 7,
           "Мафия": 1,
           "Мирный житель": 1
         },
-        "total": 8,
+        "total": 9,
         "mafia": 1,
-        "active": 6,
+        "active": 7,
         "maniac": 0
       },
       "partners": [
         {
-          "id": 295,
-          "name": "Leibster",
-          "games_together": 9,
+          "id": 468,
+          "name": "-trickster-",
+          "games_together": 4,
           "shared_wins": 3,
-          "win_rate": 33.3
+          "win_rate": 75.0
         },
         {
-          "id": 31,
-          "name": "ggaspar",
-          "games_together": 7,
+          "id": 66,
+          "name": "NaniQue-",
+          "games_together": 3,
           "shared_wins": 2,
-          "win_rate": 28.6
+          "win_rate": 66.7
+        },
+        {
+          "id": 10,
+          "name": "Waro",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
+        },
+        {
+          "id": 302,
+          "name": "BRA_HAYFA",
+          "games_together": 5,
+          "shared_wins": 3,
+          "win_rate": 60.0
         },
         {
           "id": 465,
@@ -1463,28 +1653,34 @@
           "games_together": 5,
           "shared_wins": 3,
           "win_rate": 60.0
-        },
-        {
-          "id": 218,
-          "name": "Cryless",
-          "games_together": 5,
-          "shared_wins": 2,
-          "win_rate": 40.0
-        },
-        {
-          "id": 425,
-          "name": "P0JIT0H",
-          "games_together": 4,
-          "shared_wins": 2,
-          "win_rate": 50.0
         }
       ],
       "streaks": {
-        "longest_win": 2,
-        "current_win": 1,
+        "longest_win": 3,
+        "current_win": 3,
         "longest_loss": 4
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Актив",
+          "role": "Дама Червей",
+          "result": "Победа"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -1514,33 +1710,88 @@
           "faction": "Актив",
           "role": "Калесгос",
           "result": "Победа"
-        },
-        {
-          "game_id": "607",
-          "date": "2025-10-27",
-          "name": "Мафия 573. Ночь Дочь Мечь | НОЧИ В 21:00 ПО МСК",
-          "day": "6",
-          "status": "Убит маньяком",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
-        },
-        {
-          "game_id": "605",
-          "date": "2025-09-25",
-          "name": "Мафия №571. Ведьмак. Охота воскрешения Ночи в 21:0...",
-          "day": null,
-          "status": "Выживший",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
         }
       ],
       "games_mastered": 1,
-      "rank": 14,
+      "rank": 12,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 7848,
+      "banished_rate": 0.0,
+      "loot_rate": 31.2,
+      "unique_setos": 15,
+      "title": "Цель теневой координации",
+      "title_class": "shadow-target"
+    },
+    "148": {
+      "id": 148,
+      "name": "D1ggee",
+      "games_total": 1,
+      "wins_total": 1,
+      "win_rate": 100.0,
+      "factions": [
+        {
+          "name": "Мирный житель",
+          "games": 1,
+          "wins": 1,
+          "win_rate": 100.0
+        }
+      ],
+      "monthly": [
+        {
+          "month": "2025-12",
+          "games": 1,
+          "wins": 1,
+          "win_rate": 100.0
+        }
+      ],
+      "statuses": [
+        {
+          "name": "Умер",
+          "count": 1
+        }
+      ],
+      "day_stats": {
+        "with_day": 1,
+        "avg_day": 5.0,
+        "min_day": 5,
+        "max_day": 5
+      },
+      "roles": {
+        "by_faction": {
+          "Мирный житель": 1
+        },
+        "total": 1,
+        "mafia": 0,
+        "active": 0,
+        "maniac": 0
+      },
+      "partners": [],
+      "streaks": {
+        "longest_win": 1,
+        "current_win": 1,
+        "longest_loss": 0
+      },
+      "recent_games": [
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "5",
+          "status": "Умер",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        }
+      ],
+      "games_mastered": 0,
+      "rank": 63,
+      "is_top10": false,
+      "posts_count": 0,
+      "banished_rate": 0.0,
+      "loot_rate": 0.0,
+      "unique_setos": 1,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     },
     "150": {
       "id": 150,
@@ -1604,22 +1855,26 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 60,
+      "rank": 64,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 354,
+      "banished_rate": 0.0,
+      "loot_rate": 0.0,
+      "unique_setos": 1,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     },
     "155": {
       "id": 155,
       "name": "_diXon",
-      "games_total": 1,
-      "wins_total": 1,
+      "games_total": 2,
+      "wins_total": 2,
       "win_rate": 100.0,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "win_rate": 100.0
         }
       ],
@@ -1629,19 +1884,29 @@
           "games": 1,
           "wins": 1,
           "win_rate": 100.0
+        },
+        {
+          "month": "2025-12",
+          "games": 1,
+          "wins": 1,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
         {
           "name": "Выживший",
           "count": 1
+        },
+        {
+          "name": "Убит мафией",
+          "count": 1
         }
       ],
       "day_stats": {
-        "with_day": 0,
-        "avg_day": null,
-        "min_day": null,
-        "max_day": null
+        "with_day": 1,
+        "avg_day": 4.0,
+        "min_day": 4,
+        "max_day": 4
       },
       "roles": {
         "by_faction": {
@@ -1654,11 +1919,21 @@
       },
       "partners": [],
       "streaks": {
-        "longest_win": 1,
-        "current_win": 1,
+        "longest_win": 2,
+        "current_win": 2,
         "longest_loss": 0
       },
       "recent_games": [
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "4",
+          "status": "Убит мафией",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -1671,23 +1946,33 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 61,
+      "rank": 48,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 931,
+      "banished_rate": 0.0,
+      "loot_rate": 0.0,
+      "unique_setos": 2,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     },
     "188": {
       "id": 188,
       "name": "Вася",
-      "games_total": 8,
+      "games_total": 9,
       "wins_total": 3,
-      "win_rate": 37.5,
+      "win_rate": 33.3,
       "factions": [
         {
           "name": "Мирный житель",
           "games": 5,
           "wins": 1,
           "win_rate": 20.0
+        },
+        {
+          "name": "Мафия",
+          "games": 2,
+          "wins": 1,
+          "win_rate": 50.0
         },
         {
           "name": "Актив",
@@ -1700,12 +1985,6 @@
           "games": 1,
           "wins": 0,
           "win_rate": 0.0
-        },
-        {
-          "name": "Мафия",
-          "games": 1,
-          "wins": 1,
-          "win_rate": 100.0
         }
       ],
       "monthly": [
@@ -1744,12 +2023,18 @@
           "games": 1,
           "wins": 0,
           "win_rate": 0.0
+        },
+        {
+          "month": "2025-12",
+          "games": 1,
+          "wins": 0,
+          "win_rate": 0.0
         }
       ],
       "statuses": [
         {
           "name": "Выгнан",
-          "count": 4
+          "count": 5
         },
         {
           "name": "Выживший",
@@ -1765,8 +2050,8 @@
         }
       ],
       "day_stats": {
-        "with_day": 6,
-        "avg_day": 3.67,
+        "with_day": 7,
+        "avg_day": 3.43,
         "min_day": 1,
         "max_day": 7
       },
@@ -1774,35 +2059,21 @@
         "by_faction": {
           "Актив": 1,
           "Маньяк": 1,
-          "Мафия": 1,
+          "Мафия": 2,
           "Мирный житель": 1
         },
-        "total": 4,
-        "mafia": 1,
+        "total": 5,
+        "mafia": 2,
         "active": 1,
         "maniac": 1
       },
       "partners": [
-        {
-          "id": 425,
-          "name": "P0JIT0H",
-          "games_together": 6,
-          "shared_wins": 2,
-          "win_rate": 33.3
-        },
         {
           "id": 10,
           "name": "Waro",
           "games_together": 4,
           "shared_wins": 2,
           "win_rate": 50.0
-        },
-        {
-          "id": 483,
-          "name": "Mr Scuf",
-          "games_together": 4,
-          "shared_wins": 1,
-          "win_rate": 25.0
         },
         {
           "id": 302,
@@ -1817,14 +2088,38 @@
           "games_together": 3,
           "shared_wins": 1,
           "win_rate": 33.3
+        },
+        {
+          "id": 425,
+          "name": "P0JIT0H",
+          "games_together": 7,
+          "shared_wins": 2,
+          "win_rate": 28.6
+        },
+        {
+          "id": 483,
+          "name": "Mr Scuf",
+          "games_together": 4,
+          "shared_wins": 1,
+          "win_rate": 25.0
         }
       ],
       "streaks": {
         "longest_win": 2,
         "current_win": 0,
-        "longest_loss": 3
+        "longest_loss": 4
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": "2",
+          "status": "Выгнан",
+          "faction": "Мафия",
+          "role": "Десятка Пик",
+          "result": "Поражение"
+        },
         {
           "game_id": "609",
           "date": "2025-11-16",
@@ -1864,23 +2159,17 @@
           "faction": "Мафия",
           "role": "Назгул",
           "result": "Победа"
-        },
-        {
-          "game_id": "601",
-          "date": "2025-08-11",
-          "name": "Мафия 567. Три богатыря",
-          "day": "2",
-          "status": "Выгнан",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
         }
       ],
       "games_mastered": 1,
-      "rank": 22,
+      "rank": 21,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 1695,
+      "banished_rate": 55.6,
+      "loot_rate": 44.4,
+      "unique_setos": 9,
+      "title": "Жертва",
+      "title_class": "victim"
     },
     "193": {
       "id": 193,
@@ -1983,6 +2272,20 @@
       },
       "partners": [
         {
+          "id": 95,
+          "name": "R0ss0ha",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
+        },
+        {
+          "id": 259,
+          "name": "xaxain",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
+        },
+        {
           "id": 347,
           "name": "Messor",
           "games_together": 5,
@@ -2002,20 +2305,6 @@
           "games_together": 5,
           "shared_wins": 2,
           "win_rate": 40.0
-        },
-        {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 5,
-          "shared_wins": 1,
-          "win_rate": 20.0
-        },
-        {
-          "id": 95,
-          "name": "R0ss0ha",
-          "games_together": 3,
-          "shared_wins": 3,
-          "win_rate": 100.0
         }
       ],
       "streaks": {
@@ -2076,10 +2365,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 16,
+      "rank": 17,
       "is_top10": false,
-      "title": "Легенда раздела",
-      "title_class": "legend"
+      "posts_count": 0,
+      "banished_rate": 58.3,
+      "loot_rate": 58.3,
+      "unique_setos": 10,
+      "title": "Жертва",
+      "title_class": "victim"
     },
     "203": {
       "id": 203,
@@ -2194,39 +2487,39 @@
       },
       "partners": [
         {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 7,
-          "shared_wins": 3,
-          "win_rate": 42.9
-        },
-        {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 7,
+          "id": 212,
+          "name": "Francyz",
+          "games_together": 3,
           "shared_wins": 2,
-          "win_rate": 28.6
+          "win_rate": 66.7
         },
         {
-          "id": 432,
-          "name": "Shyrik",
-          "games_together": 6,
+          "id": 424,
+          "name": "KyKyLLLka",
+          "games_together": 3,
           "shared_wins": 2,
-          "win_rate": 33.3
+          "win_rate": 66.7
         },
         {
-          "id": 31,
-          "name": "ggaspar",
-          "games_together": 5,
-          "shared_wins": 1,
-          "win_rate": 20.0
-        },
-        {
-          "id": 295,
-          "name": "Leibster",
-          "games_together": 4,
+          "id": 425,
+          "name": "P0JIT0H",
+          "games_together": 3,
           "shared_wins": 2,
-          "win_rate": 50.0
+          "win_rate": 66.7
+        },
+        {
+          "id": 334,
+          "name": "scarppy",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
+        },
+        {
+          "id": 484,
+          "name": "эквилибристика",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
         }
       ],
       "streaks": {
@@ -2287,10 +2580,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 19,
+      "rank": 20,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 0,
+      "banished_rate": 50.0,
+      "loot_rate": 40.0,
+      "unique_setos": 10,
+      "title": "Сердце раздела",
+      "title_class": "heart"
     },
     "204": {
       "id": 204,
@@ -2375,34 +2672,6 @@
           "games_together": 3,
           "shared_wins": 2,
           "win_rate": 66.7
-        },
-        {
-          "id": 135,
-          "name": "Bararym",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        },
-        {
-          "id": 302,
-          "name": "BRA_HAYFA",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        },
-        {
-          "id": 21,
-          "name": "Facepalm",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        },
-        {
-          "id": 31,
-          "name": "ggaspar",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
         }
       ],
       "streaks": {
@@ -2453,29 +2722,33 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 40,
+      "rank": 45,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 235,
+      "banished_rate": 25.0,
+      "loot_rate": 25.0,
+      "unique_setos": 4,
+      "title": "Попущ",
+      "title_class": "popush"
     },
     "207": {
       "id": 207,
       "name": "PIRO48",
-      "games_total": 10,
-      "wins_total": 4,
-      "win_rate": 40.0,
+      "games_total": 12,
+      "wins_total": 6,
+      "win_rate": 50.0,
       "factions": [
+        {
+          "name": "Мирный житель",
+          "games": 5,
+          "wins": 2,
+          "win_rate": 40.0
+        },
         {
           "name": "Мафия",
           "games": 3,
           "wins": 3,
           "win_rate": 100.0
-        },
-        {
-          "name": "Мирный житель",
-          "games": 3,
-          "wins": 0,
-          "win_rate": 0.0
         },
         {
           "name": "Актив",
@@ -2526,6 +2799,12 @@
           "games": 3,
           "wins": 2,
           "win_rate": 66.7
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 2,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
@@ -2535,11 +2814,11 @@
         },
         {
           "name": "Убит мафией",
-          "count": 2
+          "count": 3
         },
         {
           "name": "Умер в клетке",
-          "count": 1
+          "count": 2
         },
         {
           "name": "Выгнан",
@@ -2551,8 +2830,8 @@
         }
       ],
       "day_stats": {
-        "with_day": 5,
-        "avg_day": 3.2,
+        "with_day": 7,
+        "avg_day": 3.14,
         "min_day": 1,
         "max_day": 7
       },
@@ -2571,47 +2850,67 @@
       },
       "partners": [
         {
-          "id": 218,
-          "name": "Cryless",
-          "games_together": 4,
-          "shared_wins": 2,
-          "win_rate": 50.0
+          "id": 252,
+          "name": "pnanrkotikivj",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
+        },
+        {
+          "id": 263,
+          "name": "wisp74rus",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
+        },
+        {
+          "id": 79,
+          "name": "ЖУМОНГ",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
         },
         {
           "id": 483,
           "name": "Mr Scuf",
-          "games_together": 3,
-          "shared_wins": 2,
-          "win_rate": 66.7
-        },
-        {
-          "id": 424,
-          "name": "KyKyLLLka",
-          "games_together": 3,
-          "shared_wins": 1,
-          "win_rate": 33.3
-        },
-        {
-          "id": 484,
-          "name": "эквилибристика",
-          "games_together": 3,
-          "shared_wins": 1,
-          "win_rate": 33.3
+          "games_together": 4,
+          "shared_wins": 3,
+          "win_rate": 75.0
         },
         {
           "id": 302,
           "name": "BRA_HAYFA",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
         }
       ],
       "streaks": {
-        "longest_win": 2,
-        "current_win": 2,
+        "longest_win": 4,
+        "current_win": 4,
         "longest_loss": 5
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": "1",
+          "status": "Убит мафией",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "5",
+          "status": "Умер в клетке",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -2641,46 +2940,36 @@
           "faction": "Третий маньяк",
           "role": "Мастер клинка Самуро",
           "result": "Поражение"
-        },
-        {
-          "game_id": "607",
-          "date": "2025-10-27",
-          "name": "Мафия 573. Ночь Дочь Мечь | НОЧИ В 21:00 ПО МСК",
-          "day": "5",
-          "status": "Выгнан",
-          "faction": "Мафия",
-          "role": "Джиллер, волшебник 2-го ранга",
-          "result": "Победа"
-        },
-        {
-          "game_id": "606",
-          "date": "2025-10-14",
-          "name": "Мафия 572. Под нами мель(лужи) | НОЧИ В 21:00 ПО М...",
-          "day": null,
-          "status": "Выживший",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
         }
       ],
       "games_mastered": 1,
-      "rank": 20,
+      "rank": 18,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 5855,
+      "banished_rate": 8.3,
+      "loot_rate": 33.3,
+      "unique_setos": 11,
+      "title": "Цель теневой координации",
+      "title_class": "shadow-target"
     },
     "212": {
       "id": 212,
       "name": "Francyz",
-      "games_total": 5,
+      "games_total": 6,
       "wins_total": 3,
-      "win_rate": 60.0,
+      "win_rate": 50.0,
       "factions": [
         {
           "name": "Мирный житель",
           "games": 5,
           "wins": 3,
           "win_rate": 60.0
+        },
+        {
+          "name": "Мафия",
+          "games": 1,
+          "wins": 0,
+          "win_rate": 0.0
         }
       ],
       "monthly": [
@@ -2707,6 +2996,12 @@
           "games": 2,
           "wins": 2,
           "win_rate": 100.0
+        },
+        {
+          "month": "2025-12",
+          "games": 1,
+          "wins": 0,
+          "win_rate": 0.0
         }
       ],
       "statuses": [
@@ -2721,20 +3016,25 @@
         {
           "name": "Молния",
           "count": 1
+        },
+        {
+          "name": "Выгнан",
+          "count": 1
         }
       ],
       "day_stats": {
-        "with_day": 4,
-        "avg_day": 5.0,
+        "with_day": 5,
+        "avg_day": 4.6,
         "min_day": 2,
         "max_day": 8
       },
       "roles": {
         "by_faction": {
+          "Мафия": 1,
           "Мирный житель": 1
         },
-        "total": 1,
-        "mafia": 0,
+        "total": 2,
+        "mafia": 1,
         "active": 0,
         "maniac": 0
       },
@@ -2747,18 +3047,11 @@
           "win_rate": 75.0
         },
         {
-          "id": 295,
-          "name": "Leibster",
-          "games_together": 4,
-          "shared_wins": 2,
-          "win_rate": 50.0
-        },
-        {
           "id": 484,
           "name": "эквилибристика",
-          "games_together": 3,
+          "games_together": 4,
           "shared_wins": 3,
-          "win_rate": 100.0
+          "win_rate": 75.0
         },
         {
           "id": 443,
@@ -2773,14 +3066,31 @@
           "games_together": 3,
           "shared_wins": 2,
           "win_rate": 66.7
+        },
+        {
+          "id": 203,
+          "name": "jonny12",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
         }
       ],
       "streaks": {
         "longest_win": 2,
-        "current_win": 2,
+        "current_win": 0,
         "longest_loss": 1
       },
       "recent_games": [
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "3",
+          "status": "Выгнан",
+          "faction": "Мафия",
+          "role": "Джек О’Хара «Зеленый берет»",
+          "result": "Поражение"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -2820,42 +3130,36 @@
           "faction": "Мирный житель",
           "role": "Мирный житель",
           "result": "Победа"
-        },
-        {
-          "game_id": "597",
-          "date": "2025-02-09",
-          "name": "Мафия 556 Игра в Кальмара НОЧИ В 21:00!!!",
-          "day": "5",
-          "status": "Убит мафией",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
         }
       ],
       "games_mastered": 0,
-      "rank": 29,
+      "rank": 33,
       "is_top10": false,
-      "title": "Легенда раздела",
-      "title_class": "legend"
+      "posts_count": 3034,
+      "banished_rate": 16.7,
+      "loot_rate": 33.3,
+      "unique_setos": 6,
+      "title": "Цель теневой координации",
+      "title_class": "shadow-target"
     },
     "218": {
       "id": 218,
       "name": "Cryless",
-      "games_total": 17,
+      "games_total": 18,
       "wins_total": 7,
-      "win_rate": 41.2,
+      "win_rate": 38.9,
       "factions": [
         {
-          "name": "Мирный житель",
+          "name": "Мафия",
           "games": 7,
           "wins": 3,
           "win_rate": 42.9
         },
         {
-          "name": "Мафия",
-          "games": 6,
+          "name": "Мирный житель",
+          "games": 7,
           "wins": 3,
-          "win_rate": 50.0
+          "win_rate": 42.9
         },
         {
           "name": "Актив",
@@ -2930,6 +3234,12 @@
           "games": 2,
           "wins": 1,
           "win_rate": 50.0
+        },
+        {
+          "month": "2025-12",
+          "games": 1,
+          "wins": 0,
+          "win_rate": 0.0
         }
       ],
       "statuses": [
@@ -2942,11 +3252,11 @@
           "count": 3
         },
         {
-          "name": "Убит активом",
-          "count": 2
+          "name": "Убит маньяком",
+          "count": 3
         },
         {
-          "name": "Убит маньяком",
+          "name": "Убит активом",
           "count": 2
         },
         {
@@ -2955,8 +3265,8 @@
         }
       ],
       "day_stats": {
-        "with_day": 14,
-        "avg_day": 4.43,
+        "with_day": 15,
+        "avg_day": 4.4,
         "min_day": 1,
         "max_day": 9
       },
@@ -2964,28 +3274,21 @@
         "by_faction": {
           "Актив": 2,
           "Маньяк": 2,
-          "Мафия": 6,
+          "Мафия": 7,
           "Мирный житель": 1
         },
-        "total": 11,
-        "mafia": 6,
+        "total": 12,
+        "mafia": 7,
         "active": 2,
         "maniac": 2
       },
       "partners": [
         {
-          "id": 295,
-          "name": "Leibster",
-          "games_together": 8,
-          "shared_wins": 5,
-          "win_rate": 62.5
-        },
-        {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 6,
-          "shared_wins": 2,
-          "win_rate": 33.3
+          "id": 424,
+          "name": "KyKyLLLka",
+          "games_together": 4,
+          "shared_wins": 3,
+          "win_rate": 75.0
         },
         {
           "id": 432,
@@ -2995,18 +3298,25 @@
           "win_rate": 60.0
         },
         {
-          "id": 135,
-          "name": "Bararym",
-          "games_together": 5,
-          "shared_wins": 2,
-          "win_rate": 40.0
+          "id": 295,
+          "name": "Leibster",
+          "games_together": 9,
+          "shared_wins": 5,
+          "win_rate": 55.6
         },
         {
-          "id": 347,
-          "name": "Messor",
-          "games_together": 5,
-          "shared_wins": 1,
-          "win_rate": 20.0
+          "id": 31,
+          "name": "ggaspar",
+          "games_together": 4,
+          "shared_wins": 2,
+          "win_rate": 50.0
+        },
+        {
+          "id": 483,
+          "name": "Mr Scuf",
+          "games_together": 4,
+          "shared_wins": 2,
+          "win_rate": 50.0
         }
       ],
       "streaks": {
@@ -3015,6 +3325,16 @@
         "longest_loss": 5
       },
       "recent_games": [
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "4",
+          "status": "Убит маньяком",
+          "faction": "Мафия",
+          "role": "Джеймс Блэквуд «Морской пехотинец»",
+          "result": "Поражение"
+        },
         {
           "game_id": "609",
           "date": "2025-11-16",
@@ -3054,41 +3374,35 @@
           "faction": "Мирный житель",
           "role": "Мирный житель",
           "result": "Поражение"
-        },
-        {
-          "game_id": "605",
-          "date": "2025-09-25",
-          "name": "Мафия №571. Ведьмак. Охота воскрешения Ночи в 21:0...",
-          "day": "9",
-          "status": "Выгнан",
-          "faction": "Маньяк",
-          "role": "Лето из Гулеты",
-          "result": "Поражение"
         }
       ],
-      "games_mastered": 1,
+      "games_mastered": 2,
       "rank": 8,
       "is_top10": true,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 2880,
+      "banished_rate": 44.4,
+      "loot_rate": 27.8,
+      "unique_setos": 15,
+      "title": "Цель теневой координации",
+      "title_class": "shadow-target"
     },
     "250": {
       "id": 250,
       "name": "toouur",
-      "games_total": 5,
-      "wins_total": 2,
-      "win_rate": 40.0,
+      "games_total": 7,
+      "wins_total": 4,
+      "win_rate": 57.1,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 3,
-          "wins": 1,
-          "win_rate": 33.3
+          "games": 4,
+          "wins": 2,
+          "win_rate": 50.0
         },
         {
           "name": "Актив",
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "win_rate": 100.0
         },
         {
@@ -3116,6 +3430,12 @@
           "games": 3,
           "wins": 2,
           "win_rate": 66.7
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 2,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
@@ -3124,74 +3444,98 @@
           "count": 2
         },
         {
+          "name": "Убит мафией",
+          "count": 2
+        },
+        {
           "name": "Убит маньяком",
           "count": 2
         },
         {
-          "name": "Убит мафией",
+          "name": "Выживший",
           "count": 1
         }
       ],
       "day_stats": {
-        "with_day": 5,
-        "avg_day": 3.6,
+        "with_day": 6,
+        "avg_day": 3.67,
         "min_day": 1,
         "max_day": 9
       },
       "roles": {
         "by_faction": {
-          "Актив": 1,
+          "Актив": 2,
           "Мафия": 1,
           "Мирный житель": 1
         },
-        "total": 3,
+        "total": 4,
         "mafia": 1,
-        "active": 1,
+        "active": 2,
         "maniac": 0
       },
       "partners": [
         {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 4,
-          "shared_wins": 1,
-          "win_rate": 25.0
+          "id": 259,
+          "name": "xaxain",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
         },
         {
-          "id": 483,
-          "name": "Mr Scuf",
-          "games_together": 3,
-          "shared_wins": 2,
-          "win_rate": 66.7
+          "id": 492,
+          "name": "Nvrmnd",
+          "games_together": 4,
+          "shared_wins": 3,
+          "win_rate": 75.0
         },
         {
           "id": 79,
           "name": "ЖУМОНГ",
+          "games_together": 4,
+          "shared_wins": 3,
+          "win_rate": 75.0
+        },
+        {
+          "id": 469,
+          "name": "Aferus",
           "games_together": 3,
           "shared_wins": 2,
           "win_rate": 66.7
         },
         {
-          "id": 443,
-          "name": "Eva",
+          "id": 269,
+          "name": "Fulelgupport",
           "games_together": 3,
-          "shared_wins": 1,
-          "win_rate": 33.3
-        },
-        {
-          "id": 476,
-          "name": "Soroka_",
-          "games_together": 2,
           "shared_wins": 2,
-          "win_rate": 100.0
+          "win_rate": 66.7
         }
       ],
       "streaks": {
-        "longest_win": 1,
-        "current_win": 1,
+        "longest_win": 3,
+        "current_win": 3,
         "longest_loss": 2
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "4",
+          "status": "Убит мафией",
+          "faction": "Актив",
+          "role": "Рядовой",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -3221,46 +3565,30 @@
           "faction": "Мирный житель",
           "role": "Мирный житель",
           "result": "Победа"
-        },
-        {
-          "game_id": "597",
-          "date": "2025-02-09",
-          "name": "Мафия 556 Игра в Кальмара НОЧИ В 21:00!!!",
-          "day": "1",
-          "status": "Убит мафией",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
-        },
-        {
-          "game_id": "588",
-          "date": "2025-01-08",
-          "name": "БЕЗУМНО МОЖНО БЫТЬ В ФИНАЛИССИМЕ 2024! Мафия №555....",
-          "day": "3",
-          "status": "Выгнан",
-          "faction": "Мафия",
-          "role": "Оборотень",
-          "result": "Поражение"
         }
       ],
       "games_mastered": 0,
-      "rank": 30,
+      "rank": 26,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 1957,
+      "banished_rate": 28.6,
+      "loot_rate": 42.9,
+      "unique_setos": 6,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     },
     "252": {
       "id": 252,
       "name": "pnanrkotikivj",
-      "games_total": 5,
-      "wins_total": 3,
-      "win_rate": 60.0,
+      "games_total": 7,
+      "wins_total": 5,
+      "win_rate": 71.4,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 3,
-          "wins": 2,
-          "win_rate": 66.7
+          "games": 5,
+          "wins": 4,
+          "win_rate": 80.0
         },
         {
           "name": "Мафия",
@@ -3287,24 +3615,30 @@
           "games": 3,
           "wins": 2,
           "win_rate": 66.7
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 2,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
         {
           "name": "Убит мафией",
+          "count": 3
+        },
+        {
+          "name": "Выживший",
           "count": 2
         },
         {
           "name": "Выгнан",
           "count": 2
-        },
-        {
-          "name": "Выживший",
-          "count": 1
         }
       ],
       "day_stats": {
-        "with_day": 4,
+        "with_day": 5,
         "avg_day": 3.0,
         "min_day": 3,
         "max_day": 3
@@ -3321,47 +3655,67 @@
       },
       "partners": [
         {
-          "id": 21,
-          "name": "Facepalm",
+          "id": 469,
+          "name": "Aferus",
           "games_together": 3,
-          "shared_wins": 2,
-          "win_rate": 66.7
-        },
-        {
-          "id": 334,
-          "name": "scarppy",
-          "games_together": 3,
-          "shared_wins": 2,
-          "win_rate": 66.7
-        },
-        {
-          "id": 425,
-          "name": "P0JIT0H",
-          "games_together": 3,
-          "shared_wins": 1,
-          "win_rate": 33.3
-        },
-        {
-          "id": 280,
-          "name": "chbr",
-          "games_together": 2,
-          "shared_wins": 2,
+          "shared_wins": 3,
           "win_rate": 100.0
         },
         {
           "id": 483,
           "name": "Mr Scuf",
-          "games_together": 2,
-          "shared_wins": 2,
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
+        },
+        {
+          "id": 207,
+          "name": "PIRO48",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
+        },
+        {
+          "id": 263,
+          "name": "wisp74rus",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
+        },
+        {
+          "id": 79,
+          "name": "ЖУМОНГ",
+          "games_together": 3,
+          "shared_wins": 3,
           "win_rate": 100.0
         }
       ],
       "streaks": {
         "longest_win": 2,
-        "current_win": 0,
+        "current_win": 2,
         "longest_loss": 1
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "3",
+          "status": "Убит мафией",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -3391,52 +3745,36 @@
           "faction": "Мирный житель",
           "role": "Мирный житель",
           "result": "Победа"
-        },
-        {
-          "game_id": "605",
-          "date": "2025-09-25",
-          "name": "Мафия №571. Ведьмак. Охота воскрешения Ночи в 21:0...",
-          "day": "3",
-          "status": "Убит мафией",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
-        },
-        {
-          "game_id": "598",
-          "date": "2025-02-09",
-          "name": "Мафия 564: сеттинг для дальнобойщиков",
-          "day": null,
-          "status": "Выживший",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Победа"
         }
       ],
       "games_mastered": 0,
-      "rank": 31,
+      "rank": 27,
       "is_top10": false,
+      "posts_count": 2006,
+      "banished_rate": 28.6,
+      "loot_rate": 71.4,
+      "unique_setos": 7,
       "title": "Легенда раздела",
       "title_class": "legend"
     },
     "259": {
       "id": 259,
       "name": "xaxain",
-      "games_total": 12,
-      "wins_total": 7,
-      "win_rate": 58.3,
+      "games_total": 14,
+      "wins_total": 9,
+      "win_rate": 64.3,
       "factions": [
         {
           "name": "Актив",
-          "games": 5,
-          "wins": 4,
-          "win_rate": 80.0
+          "games": 6,
+          "wins": 5,
+          "win_rate": 83.3
         },
         {
           "name": "Мирный житель",
-          "games": 5,
-          "wins": 3,
-          "win_rate": 60.0
+          "games": 6,
+          "wins": 4,
+          "win_rate": 66.7
         },
         {
           "name": "Второй маньяк",
@@ -3499,16 +3837,22 @@
           "games": 3,
           "wins": 1,
           "win_rate": 33.3
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 2,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
         {
           "name": "Убит мафией",
-          "count": 5
+          "count": 6
         },
         {
           "name": "Выживший",
-          "count": 4
+          "count": 5
         },
         {
           "name": "Выгнан",
@@ -3524,45 +3868,24 @@
         }
       ],
       "day_stats": {
-        "with_day": 8,
-        "avg_day": 3.75,
+        "with_day": 9,
+        "avg_day": 3.67,
         "min_day": 1,
         "max_day": 9
       },
       "roles": {
         "by_faction": {
-          "Актив": 5,
+          "Актив": 6,
           "Второй маньяк": 1,
           "Мафия": 1,
           "Мирный житель": 1
         },
-        "total": 8,
+        "total": 9,
         "mafia": 1,
-        "active": 5,
+        "active": 6,
         "maniac": 0
       },
       "partners": [
-        {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 5,
-          "shared_wins": 4,
-          "win_rate": 80.0
-        },
-        {
-          "id": 425,
-          "name": "P0JIT0H",
-          "games_together": 5,
-          "shared_wins": 3,
-          "win_rate": 60.0
-        },
-        {
-          "id": 295,
-          "name": "Leibster",
-          "games_together": 4,
-          "shared_wins": 2,
-          "win_rate": 50.0
-        },
         {
           "id": 476,
           "name": "Soroka_",
@@ -3571,19 +3894,60 @@
           "win_rate": 100.0
         },
         {
-          "id": 280,
-          "name": "chbr",
+          "id": 250,
+          "name": "toouur",
           "games_together": 3,
-          "shared_wins": 2,
+          "shared_wins": 3,
+          "win_rate": 100.0
+        },
+        {
+          "id": 465,
+          "name": "Lightovych",
+          "games_together": 5,
+          "shared_wins": 4,
+          "win_rate": 80.0
+        },
+        {
+          "id": 79,
+          "name": "ЖУМОНГ",
+          "games_together": 4,
+          "shared_wins": 3,
+          "win_rate": 75.0
+        },
+        {
+          "id": 425,
+          "name": "P0JIT0H",
+          "games_together": 6,
+          "shared_wins": 4,
           "win_rate": 66.7
         }
       ],
       "streaks": {
         "longest_win": 6,
-        "current_win": 1,
+        "current_win": 3,
         "longest_loss": 5
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "3",
+          "status": "Убит мафией",
+          "faction": "Актив",
+          "role": "Лейтенант",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -3613,33 +3977,17 @@
           "faction": "Мафия",
           "role": "Галакронд Проклятый",
           "result": "Поражение"
-        },
-        {
-          "game_id": "607",
-          "date": "2025-10-27",
-          "name": "Мафия 573. Ночь Дочь Мечь | НОЧИ В 21:00 ПО МСК",
-          "day": "2",
-          "status": "Убит маньяком",
-          "faction": "Второй маньяк",
-          "role": "Себастьен",
-          "result": "Поражение"
-        },
-        {
-          "game_id": "605",
-          "date": "2025-09-25",
-          "name": "Мафия №571. Ведьмак. Охота воскрешения Ночи в 21:0...",
-          "day": null,
-          "status": "Выживший",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
         }
       ],
       "games_mastered": 0,
-      "rank": 17,
+      "rank": 15,
       "is_top10": false,
-      "title": "Легенда раздела",
-      "title_class": "legend"
+      "posts_count": 3016,
+      "banished_rate": 7.1,
+      "loot_rate": 35.7,
+      "unique_setos": 14,
+      "title": "Мэр этого города",
+      "title_class": "mayor"
     },
     "261": {
       "id": 261,
@@ -3707,15 +4055,7 @@
         "active": 2,
         "maniac": 0
       },
-      "partners": [
-        {
-          "id": 432,
-          "name": "Shyrik",
-          "games_together": 2,
-          "shared_wins": 0,
-          "win_rate": 0.0
-        }
-      ],
+      "partners": [],
       "streaks": {
         "longest_win": 0,
         "current_win": 0,
@@ -3754,29 +4094,33 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 43,
+      "rank": 46,
       "is_top10": false,
+      "posts_count": 413,
+      "banished_rate": 33.3,
+      "loot_rate": 33.3,
+      "unique_setos": 3,
       "title": "Гость раздела",
       "title_class": "guest"
     },
     "263": {
       "id": 263,
       "name": "wisp74rus",
-      "games_total": 5,
-      "wins_total": 3,
-      "win_rate": 60.0,
+      "games_total": 7,
+      "wins_total": 5,
+      "win_rate": 71.4,
       "factions": [
+        {
+          "name": "Мирный житель",
+          "games": 4,
+          "wins": 3,
+          "win_rate": 75.0
+        },
         {
           "name": "Актив",
           "games": 2,
           "wins": 2,
           "win_rate": 100.0
-        },
-        {
-          "name": "Мирный житель",
-          "games": 2,
-          "wins": 1,
-          "win_rate": 50.0
         },
         {
           "name": "Мафия",
@@ -3803,15 +4147,21 @@
           "games": 3,
           "wins": 2,
           "win_rate": 66.7
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 2,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
         {
-          "name": "Выгнан",
-          "count": 2
+          "name": "Убит мафией",
+          "count": 4
         },
         {
-          "name": "Убит мафией",
+          "name": "Выгнан",
           "count": 2
         },
         {
@@ -3820,9 +4170,9 @@
         }
       ],
       "day_stats": {
-        "with_day": 4,
-        "avg_day": 6.75,
-        "min_day": 4,
+        "with_day": 6,
+        "avg_day": 4.83,
+        "min_day": 1,
         "max_day": 9
       },
       "roles": {
@@ -3838,47 +4188,67 @@
       },
       "partners": [
         {
-          "id": 483,
-          "name": "Mr Scuf",
-          "games_together": 3,
-          "shared_wins": 2,
-          "win_rate": 66.7
-        },
-        {
-          "id": 432,
-          "name": "Shyrik",
-          "games_together": 3,
-          "shared_wins": 2,
-          "win_rate": 66.7
-        },
-        {
           "id": 302,
           "name": "BRA_HAYFA",
-          "games_together": 2,
-          "shared_wins": 2,
+          "games_together": 3,
+          "shared_wins": 3,
           "win_rate": 100.0
         },
         {
-          "id": 218,
-          "name": "Cryless",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
+          "id": 207,
+          "name": "PIRO48",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
         },
         {
-          "id": 21,
-          "name": "Facepalm",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
+          "id": 252,
+          "name": "pnanrkotikivj",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
+        },
+        {
+          "id": 79,
+          "name": "ЖУМОНГ",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
+        },
+        {
+          "id": 483,
+          "name": "Mr Scuf",
+          "games_together": 4,
+          "shared_wins": 3,
+          "win_rate": 75.0
         }
       ],
       "streaks": {
-        "longest_win": 1,
-        "current_win": 1,
+        "longest_win": 3,
+        "current_win": 3,
         "longest_loss": 1
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": "1",
+          "status": "Убит мафией",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "1",
+          "status": "Убит мафией",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -3908,31 +4278,15 @@
           "faction": "Актив",
           "role": "Тирион Фордринг",
           "result": "Победа"
-        },
-        {
-          "game_id": "599",
-          "date": "2025-07-21",
-          "name": "Мафия №565. Шагсгафт. Ночи в 21:00.",
-          "day": "9",
-          "status": "Выгнан",
-          "faction": "Мафия",
-          "role": "Анетерон",
-          "result": "Поражение"
-        },
-        {
-          "game_id": "598",
-          "date": "2025-02-09",
-          "name": "Мафия 564: сеттинг для дальнобойщиков",
-          "day": "6",
-          "status": "Выгнан",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Победа"
         }
       ],
       "games_mastered": 2,
-      "rank": 32,
+      "rank": 28,
       "is_top10": false,
+      "posts_count": 3658,
+      "banished_rate": 28.6,
+      "loot_rate": 28.6,
+      "unique_setos": 7,
       "title": "Легенда раздела",
       "title_class": "legend"
     },
@@ -4031,13 +4385,6 @@
       },
       "partners": [
         {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 6,
-          "shared_wins": 1,
-          "win_rate": 16.7
-        },
-        {
           "id": 302,
           "name": "BRA_HAYFA",
           "games_together": 5,
@@ -4045,22 +4392,29 @@
           "win_rate": 40.0
         },
         {
-          "id": 10,
-          "name": "Waro",
-          "games_together": 4,
-          "shared_wins": 1,
-          "win_rate": 25.0
-        },
-        {
-          "id": 347,
-          "name": "Messor",
-          "games_together": 4,
-          "shared_wins": 0,
-          "win_rate": 0.0
-        },
-        {
           "id": 135,
           "name": "Bararym",
+          "games_together": 3,
+          "shared_wins": 1,
+          "win_rate": 33.3
+        },
+        {
+          "id": 218,
+          "name": "Cryless",
+          "games_together": 3,
+          "shared_wins": 1,
+          "win_rate": 33.3
+        },
+        {
+          "id": 295,
+          "name": "Leibster",
+          "games_together": 3,
+          "shared_wins": 1,
+          "win_rate": 33.3
+        },
+        {
+          "id": 483,
+          "name": "Mr Scuf",
           "games_together": 3,
           "shared_wins": 1,
           "win_rate": 33.3
@@ -4126,21 +4480,31 @@
       "games_mastered": 0,
       "rank": 23,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 1047,
+      "banished_rate": 37.5,
+      "loot_rate": 62.5,
+      "unique_setos": 8,
+      "title": "Попущ",
+      "title_class": "popush"
     },
     "269": {
       "id": 269,
       "name": "Fulelgupport",
-      "games_total": 3,
-      "wins_total": 2,
-      "win_rate": 66.7,
+      "games_total": 5,
+      "wins_total": 4,
+      "win_rate": 80.0,
       "factions": [
         {
           "name": "Мирный житель",
           "games": 3,
           "wins": 2,
           "win_rate": 66.7
+        },
+        {
+          "name": "Актив",
+          "games": 2,
+          "wins": 2,
+          "win_rate": 100.0
         }
       ],
       "monthly": [
@@ -4149,6 +4513,12 @@
           "games": 3,
           "wins": 2,
           "win_rate": 66.7
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 2,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
@@ -4158,25 +4528,37 @@
         },
         {
           "name": "Выживший",
+          "count": 2
+        },
+        {
+          "name": "Убит маньяком",
           "count": 1
         }
       ],
       "day_stats": {
-        "with_day": 2,
-        "avg_day": 5.0,
-        "min_day": 4,
+        "with_day": 3,
+        "avg_day": 3.67,
+        "min_day": 1,
         "max_day": 6
       },
       "roles": {
         "by_faction": {
+          "Актив": 2,
           "Мирный житель": 1
         },
-        "total": 1,
+        "total": 3,
         "mafia": 0,
-        "active": 0,
+        "active": 2,
         "maniac": 0
       },
       "partners": [
+        {
+          "id": 468,
+          "name": "-trickster-",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
+        },
         {
           "id": 465,
           "name": "Lightovych",
@@ -4185,40 +4567,53 @@
           "win_rate": 66.7
         },
         {
-          "id": 212,
-          "name": "Francyz",
-          "games_together": 2,
+          "id": 492,
+          "name": "Nvrmnd",
+          "games_together": 3,
           "shared_wins": 2,
-          "win_rate": 100.0
+          "win_rate": 66.7
         },
         {
-          "id": 478,
-          "name": "Пташка",
-          "games_together": 2,
+          "id": 250,
+          "name": "toouur",
+          "games_together": 3,
           "shared_wins": 2,
-          "win_rate": 100.0
+          "win_rate": 66.7
         },
         {
-          "id": 484,
-          "name": "эквилибристика",
-          "games_together": 2,
+          "id": 10,
+          "name": "Waro",
+          "games_together": 3,
           "shared_wins": 2,
-          "win_rate": 100.0
-        },
-        {
-          "id": 468,
-          "name": "-trickster-",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
+          "win_rate": 66.7
         }
       ],
       "streaks": {
-        "longest_win": 1,
-        "current_win": 1,
+        "longest_win": 3,
+        "current_win": 3,
         "longest_loss": 1
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Актив",
+          "role": "Семерка Бубен",
+          "result": "Победа"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "1",
+          "status": "Убит маньяком",
+          "faction": "Актив",
+          "role": "Разнорабочий",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -4251,10 +4646,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 44,
+      "rank": 36,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 1911,
+      "banished_rate": 0.0,
+      "loot_rate": 20.0,
+      "unique_setos": 5,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     },
     "278": {
       "id": 278,
@@ -4318,8 +4717,12 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 62,
+      "rank": 65,
       "is_top10": false,
+      "posts_count": 558,
+      "banished_rate": 0.0,
+      "loot_rate": 0.0,
+      "unique_setos": 1,
       "title": "Гость раздела",
       "title_class": "guest"
     },
@@ -4425,13 +4828,6 @@
           "games_together": 3,
           "shared_wins": 2,
           "win_rate": 66.7
-        },
-        {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
         }
       ],
       "streaks": {
@@ -4492,8 +4888,12 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 33,
+      "rank": 37,
       "is_top10": false,
+      "posts_count": 724,
+      "banished_rate": 40.0,
+      "loot_rate": 40.0,
+      "unique_setos": 5,
       "title": "Легенда раздела",
       "title_class": "legend"
     },
@@ -4557,15 +4957,7 @@
         "active": 1,
         "maniac": 0
       },
-      "partners": [
-        {
-          "id": 483,
-          "name": "Mr Scuf",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
-        }
-      ],
+      "partners": [],
       "streaks": {
         "longest_win": 2,
         "current_win": 2,
@@ -4594,10 +4986,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 48,
+      "rank": 49,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 292,
+      "banished_rate": 0.0,
+      "loot_rate": 50.0,
+      "unique_setos": 2,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     },
     "285": {
       "id": 285,
@@ -4673,18 +5069,18 @@
           "win_rate": 100.0
         },
         {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 4,
-          "shared_wins": 3,
-          "win_rate": 75.0
-        },
-        {
           "id": 425,
           "name": "P0JIT0H",
           "games_together": 3,
           "shared_wins": 3,
           "win_rate": 100.0
+        },
+        {
+          "id": 465,
+          "name": "Lightovych",
+          "games_together": 4,
+          "shared_wins": 3,
+          "win_rate": 75.0
         },
         {
           "id": 443,
@@ -4759,8 +5155,12 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 34,
+      "rank": 38,
       "is_top10": false,
+      "posts_count": 677,
+      "banished_rate": 0.0,
+      "loot_rate": 20.0,
+      "unique_setos": 4,
       "title": "Легенда раздела",
       "title_class": "legend"
     },
@@ -4826,23 +5226,27 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 63,
+      "rank": 66,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 12,
+      "banished_rate": 100.0,
+      "loot_rate": 100.0,
+      "unique_setos": 1,
+      "title": "Жертва",
+      "title_class": "victim"
     },
     "292": {
       "id": 292,
       "name": "maku4ino",
-      "games_total": 4,
-      "wins_total": 2,
-      "win_rate": 50.0,
+      "games_total": 5,
+      "wins_total": 3,
+      "win_rate": 60.0,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 2,
-          "wins": 1,
-          "win_rate": 50.0
+          "games": 3,
+          "wins": 2,
+          "win_rate": 66.7
         },
         {
           "name": "Актив",
@@ -4869,15 +5273,21 @@
           "games": 3,
           "wins": 2,
           "win_rate": 66.7
+        },
+        {
+          "month": "2025-12",
+          "games": 1,
+          "wins": 1,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
         {
-          "name": "Выгнан",
-          "count": 2
+          "name": "Выживший",
+          "count": 3
         },
         {
-          "name": "Выживший",
+          "name": "Выгнан",
           "count": 2
         }
       ],
@@ -4900,6 +5310,20 @@
       },
       "partners": [
         {
+          "id": 295,
+          "name": "Leibster",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
+        },
+        {
+          "id": 263,
+          "name": "wisp74rus",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
+        },
+        {
           "id": 31,
           "name": "ggaspar",
           "games_together": 3,
@@ -4919,28 +5343,24 @@
           "games_together": 3,
           "shared_wins": 1,
           "win_rate": 33.3
-        },
-        {
-          "id": 135,
-          "name": "Bararym",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
-        },
-        {
-          "id": 295,
-          "name": "Leibster",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
         }
       ],
       "streaks": {
-        "longest_win": 1,
-        "current_win": 1,
+        "longest_win": 2,
+        "current_win": 2,
         "longest_loss": 1
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -4983,35 +5403,39 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 41,
+      "rank": 39,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 1276,
+      "banished_rate": 40.0,
+      "loot_rate": 0.0,
+      "unique_setos": 5,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     },
     "295": {
       "id": 295,
       "name": "Leibster",
-      "games_total": 20,
-      "wins_total": 10,
+      "games_total": 22,
+      "wins_total": 11,
       "win_rate": 50.0,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 11,
-          "wins": 6,
-          "win_rate": 54.5
+          "games": 12,
+          "wins": 7,
+          "win_rate": 58.3
+        },
+        {
+          "name": "Мафия",
+          "games": 5,
+          "wins": 3,
+          "win_rate": 60.0
         },
         {
           "name": "Актив",
           "games": 4,
           "wins": 1,
           "win_rate": 25.0
-        },
-        {
-          "name": "Мафия",
-          "games": 4,
-          "wins": 3,
-          "win_rate": 75.0
         },
         {
           "name": "Маньяк",
@@ -5086,6 +5510,12 @@
           "games": 3,
           "wins": 2,
           "win_rate": 66.7
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 1,
+          "win_rate": 50.0
         }
       ],
       "statuses": [
@@ -5095,14 +5525,14 @@
         },
         {
           "name": "Выживший",
+          "count": 5
+        },
+        {
+          "name": "Выгнан",
           "count": 4
         },
         {
           "name": "Убит маньяком",
-          "count": 3
-        },
-        {
-          "name": "Выгнан",
           "count": 3
         },
         {
@@ -5119,8 +5549,8 @@
         }
       ],
       "day_stats": {
-        "with_day": 16,
-        "avg_day": 3.75,
+        "with_day": 17,
+        "avg_day": 3.76,
         "min_day": 1,
         "max_day": 8
       },
@@ -5128,49 +5558,49 @@
         "by_faction": {
           "Актив": 4,
           "Маньяк": 1,
-          "Мафия": 4,
+          "Мафия": 5,
           "Мирный житель": 1
         },
-        "total": 10,
-        "mafia": 4,
+        "total": 11,
+        "mafia": 5,
         "active": 4,
         "maniac": 1
       },
       "partners": [
+        {
+          "id": 292,
+          "name": "maku4ino",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
+        },
+        {
+          "id": 424,
+          "name": "KyKyLLLka",
+          "games_together": 6,
+          "shared_wins": 5,
+          "win_rate": 83.3
+        },
+        {
+          "id": 95,
+          "name": "R0ss0ha",
+          "games_together": 4,
+          "shared_wins": 3,
+          "win_rate": 75.0
+        },
+        {
+          "id": 10,
+          "name": "Waro",
+          "games_together": 7,
+          "shared_wins": 5,
+          "win_rate": 71.4
+        },
         {
           "id": 432,
           "name": "Shyrik",
           "games_together": 9,
           "shared_wins": 6,
           "win_rate": 66.7
-        },
-        {
-          "id": 135,
-          "name": "Bararym",
-          "games_together": 9,
-          "shared_wins": 3,
-          "win_rate": 33.3
-        },
-        {
-          "id": 218,
-          "name": "Cryless",
-          "games_together": 8,
-          "shared_wins": 5,
-          "win_rate": 62.5
-        },
-        {
-          "id": 31,
-          "name": "ggaspar",
-          "games_together": 8,
-          "shared_wins": 4,
-          "win_rate": 50.0
-        },
-        {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 8,
-          "shared_wins": 4,
-          "win_rate": 50.0
         }
       ],
       "streaks": {
@@ -5179,6 +5609,26 @@
         "longest_loss": 4
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "4",
+          "status": "Выгнан",
+          "faction": "Мафия",
+          "role": "Рене Дюшам «Шпион»",
+          "result": "Поражение"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -5208,52 +5658,36 @@
           "faction": "Актив",
           "role": "Провидец Воржей",
           "result": "Победа"
-        },
-        {
-          "game_id": "607",
-          "date": "2025-10-27",
-          "name": "Мафия 573. Ночь Дочь Мечь | НОЧИ В 21:00 ПО МСК",
-          "day": "2",
-          "status": "Выгнан",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
-        },
-        {
-          "game_id": "605",
-          "date": "2025-09-25",
-          "name": "Мафия №571. Ведьмак. Охота воскрешения Ночи в 21:0...",
-          "day": "2",
-          "status": "Умер в клетке",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
         }
       ],
       "games_mastered": 0,
-      "rank": 4,
+      "rank": 3,
       "is_top10": true,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 1540,
+      "banished_rate": 18.2,
+      "loot_rate": 40.9,
+      "unique_setos": 20,
+      "title": "Мэр этого города",
+      "title_class": "mayor"
     },
     "302": {
       "id": 302,
       "name": "BRA_HAYFA",
-      "games_total": 19,
-      "wins_total": 6,
-      "win_rate": 31.6,
+      "games_total": 21,
+      "wins_total": 8,
+      "win_rate": 38.1,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 10,
-          "wins": 3,
-          "win_rate": 30.0
+          "games": 11,
+          "wins": 4,
+          "win_rate": 36.4
         },
         {
           "name": "Актив",
-          "games": 6,
-          "wins": 3,
-          "win_rate": 50.0
+          "games": 7,
+          "wins": 4,
+          "win_rate": 57.1
         },
         {
           "name": "Мафия",
@@ -5328,12 +5762,18 @@
           "games": 2,
           "wins": 1,
           "win_rate": 50.0
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 2,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
         {
           "name": "Убит мафией",
-          "count": 9
+          "count": 10
         },
         {
           "name": "Убит маньяком",
@@ -5345,7 +5785,7 @@
         },
         {
           "name": "Выживший",
-          "count": 1
+          "count": 2
         },
         {
           "name": "Убит активом",
@@ -5353,66 +5793,86 @@
         }
       ],
       "day_stats": {
-        "with_day": 18,
-        "avg_day": 3.28,
+        "with_day": 19,
+        "avg_day": 3.26,
         "min_day": 1,
         "max_day": 7
       },
       "roles": {
         "by_faction": {
-          "Актив": 6,
+          "Актив": 7,
           "Второй маньяк": 1,
           "Мафия": 2,
           "Мирный житель": 1
         },
-        "total": 10,
+        "total": 11,
         "mafia": 2,
-        "active": 6,
+        "active": 7,
         "maniac": 0
       },
       "partners": [
         {
-          "id": 483,
-          "name": "Mr Scuf",
-          "games_together": 9,
-          "shared_wins": 4,
-          "win_rate": 44.4
-        },
-        {
-          "id": 10,
-          "name": "Waro",
-          "games_together": 9,
+          "id": 263,
+          "name": "wisp74rus",
+          "games_together": 3,
           "shared_wins": 3,
-          "win_rate": 33.3
+          "win_rate": 100.0
         },
         {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 7,
+          "id": 468,
+          "name": "-trickster-",
+          "games_together": 3,
           "shared_wins": 2,
-          "win_rate": 28.6
+          "win_rate": 66.7
         },
         {
-          "id": 347,
-          "name": "Messor",
-          "games_together": 6,
-          "shared_wins": 0,
-          "win_rate": 0.0
+          "id": 207,
+          "name": "PIRO48",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
         },
         {
-          "id": 268,
-          "name": "CorvusCorax",
+          "id": 334,
+          "name": "scarppy",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
+        },
+        {
+          "id": 135,
+          "name": "Bararym",
           "games_together": 5,
-          "shared_wins": 2,
-          "win_rate": 40.0
+          "shared_wins": 3,
+          "win_rate": 60.0
         }
       ],
       "streaks": {
-        "longest_win": 2,
-        "current_win": 1,
+        "longest_win": 3,
+        "current_win": 3,
         "longest_loss": 9
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": "3",
+          "status": "Убит мафией",
+          "faction": "Актив",
+          "role": "Валет Бубен",
+          "result": "Победа"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -5442,40 +5902,24 @@
           "faction": "Актив",
           "role": "Ричард Сайфер, искатель истины",
           "result": "Поражение"
-        },
-        {
-          "game_id": "606",
-          "date": "2025-10-14",
-          "name": "Мафия 572. Под нами мель(лужи) | НОЧИ В 21:00 ПО М...",
-          "day": "4",
-          "status": "Убит маньяком",
-          "faction": "Актив",
-          "role": "Детектив",
-          "result": "Поражение"
-        },
-        {
-          "game_id": "605",
-          "date": "2025-09-25",
-          "name": "Мафия №571. Ведьмак. Охота воскрешения Ночи в 21:0...",
-          "day": "5",
-          "status": "Убит активом",
-          "faction": "Актив",
-          "role": "Лютик, он же Юлиан Альфред Панкрац, виконт де Летт...",
-          "result": "Поражение"
         }
       ],
       "games_mastered": 1,
       "rank": 5,
       "is_top10": true,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 6993,
+      "banished_rate": 19.0,
+      "loot_rate": 61.9,
+      "unique_setos": 19,
+      "title": "Сердце раздела",
+      "title_class": "heart"
     },
     "332": {
       "id": 332,
       "name": "dispersion",
-      "games_total": 11,
+      "games_total": 12,
       "wins_total": 5,
-      "win_rate": 45.5,
+      "win_rate": 41.7,
       "factions": [
         {
           "name": "Мирный житель",
@@ -5484,13 +5928,13 @@
           "win_rate": 20.0
         },
         {
-          "name": "Актив",
-          "games": 3,
+          "name": "Мафия",
+          "games": 4,
           "wins": 2,
-          "win_rate": 66.7
+          "win_rate": 50.0
         },
         {
-          "name": "Мафия",
+          "name": "Актив",
           "games": 3,
           "wins": 2,
           "win_rate": 66.7
@@ -5544,6 +5988,12 @@
           "games": 1,
           "wins": 1,
           "win_rate": 100.0
+        },
+        {
+          "month": "2025-12",
+          "games": 1,
+          "wins": 0,
+          "win_rate": 0.0
         }
       ],
       "statuses": [
@@ -5562,39 +6012,43 @@
         {
           "name": "Убит маньяком",
           "count": 1
+        },
+        {
+          "name": "Умер в клетке",
+          "count": 1
         }
       ],
       "day_stats": {
-        "with_day": 8,
-        "avg_day": 4.13,
+        "with_day": 9,
+        "avg_day": 4.0,
         "min_day": 1,
         "max_day": 6
       },
       "roles": {
         "by_faction": {
           "Актив": 3,
-          "Мафия": 3,
+          "Мафия": 4,
           "Мирный житель": 1
         },
-        "total": 7,
-        "mafia": 3,
+        "total": 8,
+        "mafia": 4,
         "active": 3,
         "maniac": 0
       },
       "partners": [
         {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 6,
-          "shared_wins": 2,
-          "win_rate": 33.3
+          "id": 95,
+          "name": "R0ss0ha",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
         },
         {
-          "id": 425,
-          "name": "P0JIT0H",
-          "games_together": 5,
+          "id": 295,
+          "name": "Leibster",
+          "games_together": 4,
           "shared_wins": 2,
-          "win_rate": 40.0
+          "win_rate": 50.0
         },
         {
           "id": 483,
@@ -5604,26 +6058,36 @@
           "win_rate": 50.0
         },
         {
-          "id": 31,
-          "name": "ggaspar",
-          "games_together": 4,
-          "shared_wins": 1,
-          "win_rate": 25.0
+          "id": 425,
+          "name": "P0JIT0H",
+          "games_together": 5,
+          "shared_wins": 2,
+          "win_rate": 40.0
         },
         {
-          "id": 432,
-          "name": "Shyrik",
-          "games_together": 4,
-          "shared_wins": 1,
-          "win_rate": 25.0
+          "id": 465,
+          "name": "Lightovych",
+          "games_together": 6,
+          "shared_wins": 2,
+          "win_rate": 33.3
         }
       ],
       "streaks": {
         "longest_win": 2,
-        "current_win": 1,
+        "current_win": 0,
         "longest_loss": 3
       },
       "recent_games": [
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "3",
+          "status": "Умер в клетке",
+          "faction": "Мафия",
+          "role": "Сэр Фрэнсис T. Вулридж «Снайпер»",
+          "result": "Поражение"
+        },
         {
           "game_id": "609",
           "date": "2025-11-16",
@@ -5663,21 +6127,15 @@
           "faction": "Мафия",
           "role": "Дарт Вейдер",
           "result": "Победа"
-        },
-        {
-          "game_id": "599",
-          "date": "2025-07-21",
-          "name": "Мафия №565. Шагсгафт. Ночи в 21:00.",
-          "day": "6",
-          "status": "Убит маньяком",
-          "faction": "Актив",
-          "role": "Малфурион Ярость Бури",
-          "result": "Победа"
         }
       ],
       "games_mastered": 5,
-      "rank": 18,
+      "rank": 19,
       "is_top10": false,
+      "posts_count": 5407,
+      "banished_rate": 25.0,
+      "loot_rate": 25.0,
+      "unique_setos": 11,
       "title": "Табличник",
       "title_class": "tablet"
     },
@@ -5762,27 +6220,6 @@
       },
       "partners": [
         {
-          "id": 332,
-          "name": "dispersion",
-          "games_together": 4,
-          "shared_wins": 1,
-          "win_rate": 25.0
-        },
-        {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 4,
-          "shared_wins": 1,
-          "win_rate": 25.0
-        },
-        {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 4,
-          "shared_wins": 1,
-          "win_rate": 25.0
-        },
-        {
           "id": 295,
           "name": "Leibster",
           "games_together": 3,
@@ -5795,6 +6232,27 @@
           "games_together": 3,
           "shared_wins": 1,
           "win_rate": 33.3
+        },
+        {
+          "id": 31,
+          "name": "ggaspar",
+          "games_together": 3,
+          "shared_wins": 1,
+          "win_rate": 33.3
+        },
+        {
+          "id": 432,
+          "name": "Shyrik",
+          "games_together": 3,
+          "shared_wins": 1,
+          "win_rate": 33.3
+        },
+        {
+          "id": 332,
+          "name": "dispersion",
+          "games_together": 4,
+          "shared_wins": 1,
+          "win_rate": 25.0
         }
       ],
       "streaks": {
@@ -5855,10 +6313,14 @@
         }
       ],
       "games_mastered": 1,
-      "rank": 35,
+      "rank": 40,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 868,
+      "banished_rate": 20.0,
+      "loot_rate": 60.0,
+      "unique_setos": 5,
+      "title": "Попущ",
+      "title_class": "popush"
     },
     "334": {
       "id": 334,
@@ -5958,36 +6420,36 @@
       },
       "partners": [
         {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 4,
-          "shared_wins": 2,
-          "win_rate": 50.0
-        },
-        {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 4,
-          "shared_wins": 2,
-          "win_rate": 50.0
-        },
-        {
-          "id": 483,
-          "name": "Mr Scuf",
-          "games_together": 4,
-          "shared_wins": 2,
-          "win_rate": 50.0
-        },
-        {
-          "id": 425,
-          "name": "P0JIT0H",
-          "games_together": 4,
-          "shared_wins": 2,
-          "win_rate": 50.0
-        },
-        {
           "id": 302,
           "name": "BRA_HAYFA",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
+        },
+        {
+          "id": 212,
+          "name": "Francyz",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
+        },
+        {
+          "id": 203,
+          "name": "jonny12",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
+        },
+        {
+          "id": 252,
+          "name": "pnanrkotikivj",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
+        },
+        {
+          "id": 432,
+          "name": "Shyrik",
           "games_together": 3,
           "shared_wins": 2,
           "win_rate": 66.7
@@ -6051,10 +6513,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 25,
+      "rank": 29,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 0,
+      "banished_rate": 28.6,
+      "loot_rate": 28.6,
+      "unique_setos": 7,
+      "title": "Мэр этого города",
+      "title_class": "mayor"
     },
     "347": {
       "id": 347,
@@ -6184,27 +6650,6 @@
       },
       "partners": [
         {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 8,
-          "shared_wins": 1,
-          "win_rate": 12.5
-        },
-        {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 6,
-          "shared_wins": 1,
-          "win_rate": 16.7
-        },
-        {
-          "id": 302,
-          "name": "BRA_HAYFA",
-          "games_together": 6,
-          "shared_wins": 0,
-          "win_rate": 0.0
-        },
-        {
           "id": 193,
           "name": "Whats_Up4you",
           "games_together": 5,
@@ -6212,11 +6657,32 @@
           "win_rate": 60.0
         },
         {
-          "id": 218,
-          "name": "Cryless",
-          "games_together": 5,
+          "id": 468,
+          "name": "-trickster-",
+          "games_together": 3,
           "shared_wins": 1,
-          "win_rate": 20.0
+          "win_rate": 33.3
+        },
+        {
+          "id": 135,
+          "name": "Bararym",
+          "games_together": 3,
+          "shared_wins": 1,
+          "win_rate": 33.3
+        },
+        {
+          "id": 424,
+          "name": "KyKyLLLka",
+          "games_together": 3,
+          "shared_wins": 1,
+          "win_rate": 33.3
+        },
+        {
+          "id": 259,
+          "name": "xaxain",
+          "games_together": 3,
+          "shared_wins": 1,
+          "win_rate": 33.3
         }
       ],
       "streaks": {
@@ -6277,10 +6743,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 11,
+      "rank": 13,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 7805,
+      "banished_rate": 33.3,
+      "loot_rate": 53.3,
+      "unique_setos": 13,
+      "title": "Сердце раздела",
+      "title_class": "heart"
     },
     "350": {
       "id": 350,
@@ -6346,36 +6816,7 @@
         "active": 1,
         "maniac": 0
       },
-      "partners": [
-        {
-          "id": 332,
-          "name": "dispersion",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
-        },
-        {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
-        },
-        {
-          "id": 425,
-          "name": "P0JIT0H",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
-        },
-        {
-          "id": 95,
-          "name": "R0ss0ha",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
-        }
-      ],
+      "partners": [],
       "streaks": {
         "longest_win": 3,
         "current_win": 3,
@@ -6414,10 +6855,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 45,
+      "rank": 47,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 139,
+      "banished_rate": 33.3,
+      "loot_rate": 66.7,
+      "unique_setos": 3,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     },
     "424": {
       "id": 424,
@@ -6545,13 +6990,6 @@
       },
       "partners": [
         {
-          "id": 432,
-          "name": "Shyrik",
-          "games_together": 7,
-          "shared_wins": 4,
-          "win_rate": 57.1
-        },
-        {
           "id": 295,
           "name": "Leibster",
           "games_together": 6,
@@ -6559,25 +6997,32 @@
           "win_rate": 83.3
         },
         {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 6,
+          "id": 218,
+          "name": "Cryless",
+          "games_together": 4,
           "shared_wins": 3,
-          "win_rate": 50.0
+          "win_rate": 75.0
         },
         {
-          "id": 425,
-          "name": "P0JIT0H",
-          "games_together": 6,
+          "id": 10,
+          "name": "Waro",
+          "games_together": 4,
           "shared_wins": 3,
-          "win_rate": 50.0
+          "win_rate": 75.0
         },
         {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 5,
+          "id": 203,
+          "name": "jonny12",
+          "games_together": 3,
           "shared_wins": 2,
-          "win_rate": 40.0
+          "win_rate": 66.7
+        },
+        {
+          "id": 285,
+          "name": "oykc",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
         }
       ],
       "streaks": {
@@ -6638,17 +7083,21 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 12,
+      "rank": 14,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 3658,
+      "banished_rate": 40.0,
+      "loot_rate": 66.7,
+      "unique_setos": 14,
+      "title": "Сердце раздела",
+      "title_class": "heart"
     },
     "425": {
       "id": 425,
       "name": "P0JIT0H",
-      "games_total": 19,
-      "wins_total": 10,
-      "win_rate": 52.6,
+      "games_total": 21,
+      "wins_total": 11,
+      "win_rate": 52.4,
       "factions": [
         {
           "name": "Мирный житель",
@@ -6658,15 +7107,15 @@
         },
         {
           "name": "Мафия",
-          "games": 6,
+          "games": 7,
           "wins": 4,
-          "win_rate": 66.7
+          "win_rate": 57.1
         },
         {
           "name": "Актив",
-          "games": 2,
-          "wins": 1,
-          "win_rate": 50.0
+          "games": 3,
+          "wins": 2,
+          "win_rate": 66.7
         },
         {
           "name": "Маньяк",
@@ -6729,16 +7178,22 @@
           "games": 3,
           "wins": 0,
           "win_rate": 0.0
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 1,
+          "win_rate": 50.0
         }
       ],
       "statuses": [
         {
           "name": "Убит мафией",
-          "count": 6
+          "count": 7
         },
         {
           "name": "Выгнан",
-          "count": 5
+          "count": 6
         },
         {
           "name": "Выживший",
@@ -6762,30 +7217,44 @@
         }
       ],
       "day_stats": {
-        "with_day": 15,
-        "avg_day": 2.67,
+        "with_day": 17,
+        "avg_day": 2.65,
         "min_day": 1,
         "max_day": 7
       },
       "roles": {
         "by_faction": {
-          "Актив": 2,
+          "Актив": 3,
           "Маньяк": 1,
-          "Мафия": 6,
+          "Мафия": 7,
           "Мирный житель": 1
         },
-        "total": 10,
-        "mafia": 6,
-        "active": 2,
+        "total": 12,
+        "mafia": 7,
+        "active": 3,
         "maniac": 1
       },
       "partners": [
         {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 9,
-          "shared_wins": 5,
-          "win_rate": 55.6
+          "id": 280,
+          "name": "chbr",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
+        },
+        {
+          "id": 285,
+          "name": "oykc",
+          "games_together": 3,
+          "shared_wins": 3,
+          "win_rate": 100.0
+        },
+        {
+          "id": 484,
+          "name": "эквилибристика",
+          "games_together": 4,
+          "shared_wins": 3,
+          "win_rate": 75.0
         },
         {
           "id": 10,
@@ -6795,25 +7264,11 @@
           "win_rate": 71.4
         },
         {
-          "id": 295,
-          "name": "Leibster",
-          "games_together": 7,
-          "shared_wins": 4,
-          "win_rate": 57.1
-        },
-        {
-          "id": 432,
-          "name": "Shyrik",
-          "games_together": 7,
-          "shared_wins": 4,
-          "win_rate": 57.1
-        },
-        {
-          "id": 424,
-          "name": "KyKyLLLka",
+          "id": 259,
+          "name": "xaxain",
           "games_together": 6,
-          "shared_wins": 3,
-          "win_rate": 50.0
+          "shared_wins": 4,
+          "win_rate": 66.7
         }
       ],
       "streaks": {
@@ -6822,6 +7277,26 @@
         "longest_loss": 4
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": "3",
+          "status": "Выгнан",
+          "faction": "Мафия",
+          "role": "Дама Пик",
+          "result": "Поражение"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "2",
+          "status": "Убит мафией",
+          "faction": "Актив",
+          "role": "Капитан",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -6851,33 +7326,17 @@
           "faction": "Мафия",
           "role": "Билетикус",
           "result": "Поражение"
-        },
-        {
-          "game_id": "605",
-          "date": "2025-09-25",
-          "name": "Мафия №571. Ведьмак. Охота воскрешения Ночи в 21:0...",
-          "day": null,
-          "status": "Выживший",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
-        },
-        {
-          "game_id": "604",
-          "date": "2025-09-16",
-          "name": "Мафия 570, ФЕЙЛЕД. Уютный и простой сетос для лёгк...",
-          "day": "1",
-          "status": "Выгнан",
-          "faction": "Мафия",
-          "role": "Суперзлодей Рафаам",
-          "result": "Победа"
         }
       ],
       "games_mastered": 0,
       "rank": 6,
       "is_top10": true,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 4358,
+      "banished_rate": 28.6,
+      "loot_rate": 66.7,
+      "unique_setos": 19,
+      "title": "Сердце раздела",
+      "title_class": "heart"
     },
     "429": {
       "id": 429,
@@ -6941,17 +7400,21 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 64,
+      "rank": 67,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 0,
+      "banished_rate": 0.0,
+      "loot_rate": 0.0,
+      "unique_setos": 1,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     },
     "432": {
       "id": 432,
       "name": "Shyrik",
-      "games_total": 19,
+      "games_total": 20,
       "wins_total": 7,
-      "win_rate": 36.8,
+      "win_rate": 35.0,
       "factions": [
         {
           "name": "Мирный житель",
@@ -6970,6 +7433,12 @@
           "games": 4,
           "wins": 1,
           "win_rate": 25.0
+        },
+        {
+          "name": "Второй маньяк",
+          "games": 1,
+          "wins": 0,
+          "win_rate": 0.0
         },
         {
           "name": "Маньяк",
@@ -7044,16 +7513,22 @@
           "games": 3,
           "wins": 1,
           "win_rate": 33.3
+        },
+        {
+          "month": "2025-12",
+          "games": 1,
+          "wins": 0,
+          "win_rate": 0.0
         }
       ],
       "statuses": [
         {
-          "name": "Выгнан",
+          "name": "Выживший",
           "count": 6
         },
         {
-          "name": "Выживший",
-          "count": 5
+          "name": "Выгнан",
+          "count": 6
         },
         {
           "name": "Убит мафией",
@@ -7077,11 +7552,12 @@
       "roles": {
         "by_faction": {
           "Актив": 4,
+          "Второй маньяк": 1,
           "Маньяк": 1,
           "Мафия": 4,
           "Мирный житель": 1
         },
-        "total": 10,
+        "total": 11,
         "mafia": 4,
         "active": 4,
         "maniac": 1
@@ -7095,32 +7571,32 @@
           "win_rate": 66.7
         },
         {
-          "id": 31,
-          "name": "ggaspar",
-          "games_together": 9,
-          "shared_wins": 3,
-          "win_rate": 33.3
+          "id": 10,
+          "name": "Waro",
+          "games_together": 6,
+          "shared_wins": 4,
+          "win_rate": 66.7
         },
         {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 9,
+          "id": 334,
+          "name": "scarppy",
+          "games_together": 3,
           "shared_wins": 2,
-          "win_rate": 22.2
+          "win_rate": 66.7
         },
         {
-          "id": 424,
-          "name": "KyKyLLLka",
-          "games_together": 7,
-          "shared_wins": 4,
-          "win_rate": 57.1
+          "id": 263,
+          "name": "wisp74rus",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
         },
         {
-          "id": 425,
-          "name": "P0JIT0H",
-          "games_together": 7,
-          "shared_wins": 4,
-          "win_rate": 57.1
+          "id": 259,
+          "name": "xaxain",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
         }
       ],
       "streaks": {
@@ -7129,6 +7605,16 @@
         "longest_loss": 6
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Второй маньяк",
+          "role": "Тюхе",
+          "result": "Поражение"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -7168,36 +7654,30 @@
           "faction": "Мирный житель",
           "role": "Мирный житель",
           "result": "Поражение"
-        },
-        {
-          "game_id": "606",
-          "date": "2025-10-14",
-          "name": "Мафия 572. Под нами мель(лужи) | НОЧИ В 21:00 ПО М...",
-          "day": "3",
-          "status": "Убит маньяком",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
         }
       ],
       "games_mastered": 0,
       "rank": 7,
       "is_top10": true,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 8227,
+      "banished_rate": 30.0,
+      "loot_rate": 45.0,
+      "unique_setos": 19,
+      "title": "Мутант постодрочер",
+      "title_class": "post-mutant"
     },
     "443": {
       "id": 443,
       "name": "Eva",
-      "games_total": 22,
-      "wins_total": 7,
-      "win_rate": 31.8,
+      "games_total": 24,
+      "wins_total": 8,
+      "win_rate": 33.3,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 14,
-          "wins": 5,
-          "win_rate": 35.7
+          "games": 15,
+          "wins": 6,
+          "win_rate": 40.0
         },
         {
           "name": "Мафия",
@@ -7213,7 +7693,7 @@
         },
         {
           "name": "Маньяк",
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "win_rate": 0.0
         }
@@ -7284,12 +7764,18 @@
           "games": 3,
           "wins": 1,
           "win_rate": 33.3
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 1,
+          "win_rate": 50.0
         }
       ],
       "statuses": [
         {
           "name": "Убит мафией",
-          "count": 6
+          "count": 7
         },
         {
           "name": "Выживший",
@@ -7304,71 +7790,71 @@
           "count": 3
         },
         {
+          "name": "Умер",
+          "count": 2
+        },
+        {
           "name": "Убит активом",
           "count": 1
         },
         {
           "name": "Умер в клетке",
           "count": 1
-        },
-        {
-          "name": "Умер",
-          "count": 1
         }
       ],
       "day_stats": {
-        "with_day": 17,
-        "avg_day": 2.94,
+        "with_day": 19,
+        "avg_day": 2.79,
         "min_day": 1,
         "max_day": 9
       },
       "roles": {
         "by_faction": {
           "Актив": 2,
-          "Маньяк": 1,
+          "Маньяк": 2,
           "Мафия": 5,
           "Мирный житель": 1
         },
-        "total": 9,
+        "total": 10,
         "mafia": 5,
         "active": 2,
-        "maniac": 1
+        "maniac": 2
       },
       "partners": [
         {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 11,
+          "id": 79,
+          "name": "ЖУМОНГ",
+          "games_together": 4,
           "shared_wins": 3,
-          "win_rate": 27.3
+          "win_rate": 75.0
         },
         {
-          "id": 432,
-          "name": "Shyrik",
-          "games_together": 9,
+          "id": 212,
+          "name": "Francyz",
+          "games_together": 3,
           "shared_wins": 2,
-          "win_rate": 22.2
+          "win_rate": 66.7
         },
         {
-          "id": 10,
-          "name": "Waro",
-          "games_together": 8,
-          "shared_wins": 4,
-          "win_rate": 50.0
-        },
-        {
-          "id": 31,
-          "name": "ggaspar",
-          "games_together": 8,
+          "id": 285,
+          "name": "oykc",
+          "games_together": 3,
           "shared_wins": 2,
-          "win_rate": 25.0
+          "win_rate": 66.7
         },
         {
-          "id": 347,
-          "name": "Messor",
-          "games_together": 8,
-          "shared_wins": 1,
-          "win_rate": 12.5
+          "id": 252,
+          "name": "pnanrkotikivj",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
+        },
+        {
+          "id": 259,
+          "name": "xaxain",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
         }
       ],
       "streaks": {
@@ -7377,6 +7863,26 @@
         "longest_loss": 4
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": "1",
+          "status": "Умер",
+          "faction": "Маньяк",
+          "role": "Фатум",
+          "result": "Поражение"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "2",
+          "status": "Убит мафией",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -7406,33 +7912,17 @@
           "faction": "Мирный житель",
           "role": "Мирный житель",
           "result": "Победа"
-        },
-        {
-          "game_id": "607",
-          "date": "2025-10-27",
-          "name": "Мафия 573. Ночь Дочь Мечь | НОЧИ В 21:00 ПО МСК",
-          "day": "3",
-          "status": "Выгнан",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
-        },
-        {
-          "game_id": "606",
-          "date": "2025-10-14",
-          "name": "Мафия 572. Под нами мель(лужи) | НОЧИ В 21:00 ПО М...",
-          "day": "1",
-          "status": "Убит маньяком",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
         }
       ],
       "games_mastered": 0,
       "rank": 1,
       "is_top10": true,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 7852,
+      "banished_rate": 20.8,
+      "loot_rate": 58.3,
+      "unique_setos": 20,
+      "title": "Сердце раздела",
+      "title_class": "heart"
     },
     "445": {
       "id": 445,
@@ -7496,29 +7986,39 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 65,
+      "rank": 68,
       "is_top10": false,
+      "posts_count": 93,
+      "banished_rate": 0.0,
+      "loot_rate": 100.0,
+      "unique_setos": 1,
       "title": "Гость раздела",
       "title_class": "guest"
     },
     "449": {
       "id": 449,
       "name": "lipton48",
-      "games_total": 3,
-      "wins_total": 1,
-      "win_rate": 33.3,
+      "games_total": 5,
+      "wins_total": 2,
+      "win_rate": 40.0,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 2,
-          "wins": 0,
-          "win_rate": 0.0
+          "games": 3,
+          "wins": 1,
+          "win_rate": 33.3
         },
         {
           "name": "Актив",
           "games": 1,
           "wins": 1,
           "win_rate": 100.0
+        },
+        {
+          "name": "Мафия",
+          "games": 1,
+          "wins": 0,
+          "win_rate": 0.0
         }
       ],
       "monthly": [
@@ -7533,9 +8033,19 @@
           "games": 2,
           "wins": 1,
           "win_rate": 50.0
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 1,
+          "win_rate": 50.0
         }
       ],
       "statuses": [
+        {
+          "name": "Выживший",
+          "count": 2
+        },
         {
           "name": "Молния",
           "count": 1
@@ -7558,48 +8068,42 @@
       "roles": {
         "by_faction": {
           "Актив": 1,
+          "Мафия": 1,
           "Мирный житель": 1
         },
-        "total": 2,
-        "mafia": 0,
+        "total": 3,
+        "mafia": 1,
         "active": 1,
         "maniac": 0
       },
       "partners": [
+        {
+          "id": 263,
+          "name": "wisp74rus",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
+        },
+        {
+          "id": 443,
+          "name": "Eva",
+          "games_together": 3,
+          "shared_wins": 1,
+          "win_rate": 33.3
+        },
+        {
+          "id": 31,
+          "name": "ggaspar",
+          "games_together": 3,
+          "shared_wins": 1,
+          "win_rate": 33.3
+        },
         {
           "id": 432,
           "name": "Shyrik",
           "games_together": 3,
           "shared_wins": 1,
           "win_rate": 33.3
-        },
-        {
-          "id": 218,
-          "name": "Cryless",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        },
-        {
-          "id": 424,
-          "name": "KyKyLLLka",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        },
-        {
-          "id": 292,
-          "name": "maku4ino",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        },
-        {
-          "id": 263,
-          "name": "wisp74rus",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
         }
       ],
       "streaks": {
@@ -7608,6 +8112,26 @@
         "longest_loss": 1
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мафия",
+          "role": "Шестерка Пик",
+          "result": "Поражение"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
         {
           "game_id": "609",
           "date": "2025-11-16",
@@ -7640,10 +8164,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 46,
+      "rank": 41,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 653,
+      "banished_rate": 0.0,
+      "loot_rate": 40.0,
+      "unique_setos": 5,
+      "title": "Попущ",
+      "title_class": "popush"
     },
     "450": {
       "id": 450,
@@ -7698,43 +8226,7 @@
         "active": 0,
         "maniac": 0
       },
-      "partners": [
-        {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        },
-        {
-          "id": 31,
-          "name": "ggaspar",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        },
-        {
-          "id": 424,
-          "name": "KyKyLLLka",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        },
-        {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        },
-        {
-          "id": 425,
-          "name": "P0JIT0H",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        }
-      ],
+      "partners": [],
       "streaks": {
         "longest_win": 1,
         "current_win": 0,
@@ -7763,8 +8255,12 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 49,
+      "rank": 50,
       "is_top10": false,
+      "posts_count": 678,
+      "banished_rate": 0.0,
+      "loot_rate": 50.0,
+      "unique_setos": 2,
       "title": "Гость раздела",
       "title_class": "guest"
     },
@@ -7821,15 +8317,7 @@
         "active": 0,
         "maniac": 0
       },
-      "partners": [
-        {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        }
-      ],
+      "partners": [],
       "streaks": {
         "longest_win": 1,
         "current_win": 0,
@@ -7858,8 +8346,12 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 50,
+      "rank": 51,
       "is_top10": false,
+      "posts_count": 0,
+      "banished_rate": 50.0,
+      "loot_rate": 50.0,
+      "unique_setos": 2,
       "title": "Гость раздела",
       "title_class": "guest"
     },
@@ -7964,27 +8456,6 @@
           "games_together": 3,
           "shared_wins": 0,
           "win_rate": 0.0
-        },
-        {
-          "id": 484,
-          "name": "эквилибристика",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
-        },
-        {
-          "id": 268,
-          "name": "CorvusCorax",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        },
-        {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
         }
       ],
       "streaks": {
@@ -8045,10 +8516,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 26,
+      "rank": 34,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 1196,
+      "banished_rate": 16.7,
+      "loot_rate": 16.7,
+      "unique_setos": 6,
+      "title": "Цель теневой координации",
+      "title_class": "shadow-target"
     },
     "457": {
       "id": 457,
@@ -8112,10 +8587,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 66,
+      "rank": 69,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 220,
+      "banished_rate": 0.0,
+      "loot_rate": 0.0,
+      "unique_setos": 1,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     },
     "458": {
       "id": 458,
@@ -8179,8 +8658,12 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 67,
+      "rank": 70,
       "is_top10": false,
+      "posts_count": 350,
+      "banished_rate": 0.0,
+      "loot_rate": 0.0,
+      "unique_setos": 1,
       "title": "Гость раздела",
       "title_class": "guest"
     },
@@ -8246,10 +8729,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 68,
+      "rank": 71,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 0,
+      "banished_rate": 100.0,
+      "loot_rate": 100.0,
+      "unique_setos": 1,
+      "title": "Жертва",
+      "title_class": "victim"
     },
     "465": {
       "id": 465,
@@ -8390,39 +8877,39 @@
       },
       "partners": [
         {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 11,
+          "id": 280,
+          "name": "chbr",
+          "games_together": 3,
           "shared_wins": 3,
-          "win_rate": 27.3
+          "win_rate": 100.0
         },
         {
-          "id": 425,
-          "name": "P0JIT0H",
-          "games_together": 9,
-          "shared_wins": 5,
-          "win_rate": 55.6
-        },
-        {
-          "id": 295,
-          "name": "Leibster",
-          "games_together": 8,
+          "id": 95,
+          "name": "R0ss0ha",
+          "games_together": 5,
           "shared_wins": 4,
-          "win_rate": 50.0
+          "win_rate": 80.0
         },
         {
-          "id": 484,
-          "name": "эквилибристика",
-          "games_together": 8,
+          "id": 259,
+          "name": "xaxain",
+          "games_together": 5,
           "shared_wins": 4,
-          "win_rate": 50.0
+          "win_rate": 80.0
         },
         {
-          "id": 31,
-          "name": "ggaspar",
-          "games_together": 8,
+          "id": 212,
+          "name": "Francyz",
+          "games_together": 4,
           "shared_wins": 3,
-          "win_rate": 37.5
+          "win_rate": 75.0
+        },
+        {
+          "id": 285,
+          "name": "oykc",
+          "games_together": 4,
+          "shared_wins": 3,
+          "win_rate": 75.0
         }
       ],
       "streaks": {
@@ -8483,10 +8970,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 2,
+      "rank": 4,
       "is_top10": true,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 8252,
+      "banished_rate": 31.8,
+      "loot_rate": 31.8,
+      "unique_setos": 18,
+      "title": "Мутант постодрочер",
+      "title_class": "post-mutant"
     },
     "466": {
       "id": 466,
@@ -8537,36 +9028,7 @@
         "active": 0,
         "maniac": 0
       },
-      "partners": [
-        {
-          "id": 302,
-          "name": "BRA_HAYFA",
-          "games_together": 2,
-          "shared_wins": 0,
-          "win_rate": 0.0
-        },
-        {
-          "id": 218,
-          "name": "Cryless",
-          "games_together": 2,
-          "shared_wins": 0,
-          "win_rate": 0.0
-        },
-        {
-          "id": 347,
-          "name": "Messor",
-          "games_together": 2,
-          "shared_wins": 0,
-          "win_rate": 0.0
-        },
-        {
-          "id": 10,
-          "name": "Waro",
-          "games_together": 2,
-          "shared_wins": 0,
-          "win_rate": 0.0
-        }
-      ],
+      "partners": [],
       "streaks": {
         "longest_win": 0,
         "current_win": 0,
@@ -8595,29 +9057,39 @@
         }
       ],
       "games_mastered": 2,
-      "rank": 51,
+      "rank": 52,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 71,
+      "banished_rate": 100.0,
+      "loot_rate": 100.0,
+      "unique_setos": 2,
+      "title": "Жертва",
+      "title_class": "victim"
     },
     "468": {
       "id": 468,
       "name": "-trickster-",
-      "games_total": 5,
-      "wins_total": 2,
-      "win_rate": 40.0,
+      "games_total": 7,
+      "wins_total": 4,
+      "win_rate": 57.1,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 3,
-          "wins": 1,
-          "win_rate": 33.3
+          "games": 4,
+          "wins": 2,
+          "win_rate": 50.0
         },
         {
           "name": "Мафия",
           "games": 2,
           "wins": 1,
           "win_rate": 50.0
+        },
+        {
+          "name": "Актив",
+          "games": 1,
+          "wins": 1,
+          "win_rate": 100.0
         }
       ],
       "monthly": [
@@ -8638,81 +9110,108 @@
           "games": 3,
           "wins": 1,
           "win_rate": 33.3
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 2,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
         {
           "name": "Выживший",
+          "count": 3
+        },
+        {
+          "name": "Убит мафией",
           "count": 2
         },
         {
           "name": "Выгнан",
           "count": 2
-        },
-        {
-          "name": "Убит мафией",
-          "count": 1
         }
       ],
       "day_stats": {
-        "with_day": 3,
-        "avg_day": 7.67,
-        "min_day": 6,
+        "with_day": 4,
+        "avg_day": 6.5,
+        "min_day": 3,
         "max_day": 10
       },
       "roles": {
         "by_faction": {
+          "Актив": 1,
           "Мафия": 2,
           "Мирный житель": 1
         },
-        "total": 3,
+        "total": 4,
         "mafia": 2,
-        "active": 0,
+        "active": 1,
         "maniac": 0
       },
       "partners": [
         {
-          "id": 31,
-          "name": "ggaspar",
+          "id": 135,
+          "name": "Bararym",
           "games_together": 4,
-          "shared_wins": 1,
-          "win_rate": 25.0
+          "shared_wins": 3,
+          "win_rate": 75.0
         },
         {
           "id": 10,
           "name": "Waro",
+          "games_together": 4,
+          "shared_wins": 3,
+          "win_rate": 75.0
+        },
+        {
+          "id": 302,
+          "name": "BRA_HAYFA",
           "games_together": 3,
           "shared_wins": 2,
           "win_rate": 66.7
         },
         {
-          "id": 465,
-          "name": "Lightovych",
+          "id": 269,
+          "name": "Fulelgupport",
           "games_together": 3,
-          "shared_wins": 1,
-          "win_rate": 33.3
+          "shared_wins": 2,
+          "win_rate": 66.7
         },
         {
-          "id": 347,
-          "name": "Messor",
+          "id": 483,
+          "name": "Mr Scuf",
           "games_together": 3,
-          "shared_wins": 1,
-          "win_rate": 33.3
-        },
-        {
-          "id": 425,
-          "name": "P0JIT0H",
-          "games_together": 3,
-          "shared_wins": 1,
-          "win_rate": 33.3
+          "shared_wins": 2,
+          "win_rate": 66.7
         }
       ],
       "streaks": {
-        "longest_win": 1,
-        "current_win": 1,
+        "longest_win": 3,
+        "current_win": 3,
         "longest_loss": 3
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": "3",
+          "status": "Убит мафией",
+          "faction": "Актив",
+          "role": "Туз Бубен",
+          "result": "Победа"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -8742,46 +9241,30 @@
           "faction": "Мафия",
           "role": "Сиамат",
           "result": "Поражение"
-        },
-        {
-          "game_id": "607",
-          "date": "2025-10-27",
-          "name": "Мафия 573. Ночь Дочь Мечь | НОЧИ В 21:00 ПО МСК",
-          "day": "6",
-          "status": "Убит мафией",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
-        },
-        {
-          "game_id": "604",
-          "date": "2025-09-16",
-          "name": "Мафия 570, ФЕЙЛЕД. Уютный и простой сетос для лёгк...",
-          "day": null,
-          "status": "Выживший",
-          "faction": "Мафия",
-          "role": "Лорд Джараксус",
-          "result": "Победа"
         }
       ],
       "games_mastered": 0,
-      "rank": 36,
+      "rank": 30,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 1213,
+      "banished_rate": 28.6,
+      "loot_rate": 14.3,
+      "unique_setos": 7,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     },
     "469": {
       "id": 469,
       "name": "Aferus",
-      "games_total": 3,
-      "wins_total": 1,
-      "win_rate": 33.3,
+      "games_total": 5,
+      "wins_total": 3,
+      "win_rate": 60.0,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 3,
-          "wins": 1,
-          "win_rate": 33.3
+          "games": 5,
+          "wins": 3,
+          "win_rate": 60.0
         }
       ],
       "monthly": [
@@ -8796,22 +9279,32 @@
           "games": 2,
           "wins": 1,
           "win_rate": 50.0
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 2,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
         {
           "name": "Выживший",
-          "count": 2
+          "count": 3
         },
         {
           "name": "Молния",
           "count": 1
+        },
+        {
+          "name": "Убит мафией",
+          "count": 1
         }
       ],
       "day_stats": {
-        "with_day": 1,
-        "avg_day": 8.0,
-        "min_day": 8,
+        "with_day": 2,
+        "avg_day": 4.5,
+        "min_day": 1,
         "max_day": 8
       },
       "roles": {
@@ -8825,47 +9318,67 @@
       },
       "partners": [
         {
-          "id": 443,
-          "name": "Eva",
+          "id": 252,
+          "name": "pnanrkotikivj",
           "games_together": 3,
-          "shared_wins": 1,
-          "win_rate": 33.3
+          "shared_wins": 3,
+          "win_rate": 100.0
         },
         {
-          "id": 465,
-          "name": "Lightovych",
+          "id": 79,
+          "name": "ЖУМОНГ",
           "games_together": 3,
-          "shared_wins": 1,
-          "win_rate": 33.3
+          "shared_wins": 3,
+          "win_rate": 100.0
         },
         {
-          "id": 269,
-          "name": "Fulelgupport",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
+          "id": 483,
+          "name": "Mr Scuf",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
         },
         {
-          "id": 203,
-          "name": "jonny12",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
+          "id": 492,
+          "name": "Nvrmnd",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
         },
         {
-          "id": 471,
-          "name": "Lorcer",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
+          "id": 250,
+          "name": "toouur",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
         }
       ],
       "streaks": {
-        "longest_win": 1,
-        "current_win": 0,
+        "longest_win": 2,
+        "current_win": 2,
         "longest_loss": 1
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "1",
+          "status": "Убит мафией",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
         {
           "game_id": "609",
           "date": "2025-11-16",
@@ -8898,17 +9411,21 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 47,
+      "rank": 42,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 3625,
+      "banished_rate": 0.0,
+      "loot_rate": 20.0,
+      "unique_setos": 5,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     },
     "471": {
       "id": 471,
       "name": "Lorcer",
-      "games_total": 5,
-      "wins_total": 2,
-      "win_rate": 40.0,
+      "games_total": 7,
+      "wins_total": 3,
+      "win_rate": 42.9,
       "factions": [
         {
           "name": "Мирный житель",
@@ -8918,6 +9435,12 @@
         },
         {
           "name": "Мафия",
+          "games": 2,
+          "wins": 1,
+          "win_rate": 50.0
+        },
+        {
+          "name": "Актив",
           "games": 1,
           "wins": 1,
           "win_rate": 100.0
@@ -8941,12 +9464,18 @@
           "games": 1,
           "wins": 1,
           "win_rate": 100.0
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 1,
+          "win_rate": 50.0
         }
       ],
       "statuses": [
         {
           "name": "Выживший",
-          "count": 2
+          "count": 4
         },
         {
           "name": "Убит мафией",
@@ -8969,21 +9498,22 @@
       },
       "roles": {
         "by_faction": {
-          "Мафия": 1,
+          "Актив": 1,
+          "Мафия": 2,
           "Мирный житель": 1
         },
-        "total": 2,
-        "mafia": 1,
-        "active": 0,
+        "total": 4,
+        "mafia": 2,
+        "active": 1,
         "maniac": 0
       },
       "partners": [
         {
-          "id": 484,
-          "name": "эквилибристика",
-          "games_together": 5,
+          "id": 492,
+          "name": "Nvrmnd",
+          "games_together": 3,
           "shared_wins": 2,
-          "win_rate": 40.0
+          "win_rate": 66.7
         },
         {
           "id": 465,
@@ -9000,26 +9530,46 @@
           "win_rate": 50.0
         },
         {
+          "id": 484,
+          "name": "эквилибристика",
+          "games_together": 5,
+          "shared_wins": 2,
+          "win_rate": 40.0
+        },
+        {
           "id": 443,
           "name": "Eva",
           "games_together": 4,
           "shared_wins": 1,
           "win_rate": 25.0
-        },
-        {
-          "id": 472,
-          "name": "Лиройчик",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
         }
       ],
       "streaks": {
-        "longest_win": 1,
-        "current_win": 1,
+        "longest_win": 2,
+        "current_win": 0,
         "longest_loss": 2
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мафия",
+          "role": "Валет Пик",
+          "result": "Поражение"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Актив",
+          "role": "Офицер",
+          "result": "Победа"
+        },
         {
           "game_id": "608",
           "date": "2025-11-07",
@@ -9049,33 +9599,17 @@
           "faction": "Мирный житель",
           "role": "Мирный житель",
           "result": "Поражение"
-        },
-        {
-          "game_id": "605",
-          "date": "2025-09-25",
-          "name": "Мафия №571. Ведьмак. Охота воскрешения Ночи в 21:0...",
-          "day": null,
-          "status": "Выживший",
-          "faction": "Мафия",
-          "role": "Эредин",
-          "result": "Победа"
-        },
-        {
-          "game_id": "604",
-          "date": "2025-09-16",
-          "name": "Мафия 570, ФЕЙЛЕД. Уютный и простой сетос для лёгк...",
-          "day": "2",
-          "status": "Убит мафией",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
         }
       ],
       "games_mastered": 0,
-      "rank": 37,
+      "rank": 31,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 3231,
+      "banished_rate": 0.0,
+      "loot_rate": 28.6,
+      "unique_setos": 7,
+      "title": "Цель теневой координации",
+      "title_class": "shadow-target"
     },
     "472": {
       "id": 472,
@@ -9193,20 +9727,6 @@
           "games_together": 3,
           "shared_wins": 0,
           "win_rate": 0.0
-        },
-        {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
-        },
-        {
-          "id": 471,
-          "name": "Lorcer",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
         }
       ],
       "streaks": {
@@ -9267,10 +9787,14 @@
         }
       ],
       "games_mastered": 2,
-      "rank": 21,
+      "rank": 22,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 2019,
+      "banished_rate": 55.6,
+      "loot_rate": 44.4,
+      "unique_setos": 9,
+      "title": "Жертва",
+      "title_class": "victim"
     },
     "476": {
       "id": 476,
@@ -9399,13 +9923,6 @@
           "games_together": 3,
           "shared_wins": 1,
           "win_rate": 33.3
-        },
-        {
-          "id": 280,
-          "name": "chbr",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
         }
       ],
       "streaks": {
@@ -9468,8 +9985,12 @@
       "games_mastered": 2,
       "rank": 24,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 3246,
+      "banished_rate": 12.5,
+      "loot_rate": 50.0,
+      "unique_setos": 7,
+      "title": "Попущ",
+      "title_class": "popush"
     },
     "477": {
       "id": 477,
@@ -9533,10 +10054,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 69,
+      "rank": 72,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 195,
+      "banished_rate": 100.0,
+      "loot_rate": 0.0,
+      "unique_setos": 1,
+      "title": "Жертва",
+      "title_class": "victim"
     },
     "478": {
       "id": 478,
@@ -9636,13 +10161,6 @@
           "games_together": 3,
           "shared_wins": 1,
           "win_rate": 33.3
-        },
-        {
-          "id": 212,
-          "name": "Francyz",
-          "games_together": 2,
-          "shared_wins": 2,
-          "win_rate": 100.0
         }
       ],
       "streaks": {
@@ -9703,23 +10221,27 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 38,
+      "rank": 43,
       "is_top10": false,
-      "title": "Легенда раздела",
-      "title_class": "legend"
+      "posts_count": 1522,
+      "banished_rate": 60.0,
+      "loot_rate": 20.0,
+      "unique_setos": 5,
+      "title": "Жертва",
+      "title_class": "victim"
     },
     "483": {
       "id": 483,
       "name": "Mr Scuf",
-      "games_total": 17,
-      "wins_total": 9,
-      "win_rate": 52.9,
+      "games_total": 18,
+      "wins_total": 10,
+      "win_rate": 55.6,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 9,
-          "wins": 3,
-          "win_rate": 33.3
+          "games": 10,
+          "wins": 4,
+          "win_rate": 40.0
         },
         {
           "name": "Актив",
@@ -9794,12 +10316,18 @@
           "games": 3,
           "wins": 2,
           "win_rate": 66.7
+        },
+        {
+          "month": "2025-12",
+          "games": 1,
+          "wins": 1,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
         {
           "name": "Выгнан",
-          "count": 5
+          "count": 6
         },
         {
           "name": "Убит мафией",
@@ -9827,8 +10355,8 @@
         }
       ],
       "day_stats": {
-        "with_day": 15,
-        "avg_day": 3.13,
+        "with_day": 16,
+        "avg_day": 3.0,
         "min_day": 1,
         "max_day": 8
       },
@@ -9845,47 +10373,57 @@
       },
       "partners": [
         {
-          "id": 302,
-          "name": "BRA_HAYFA",
-          "games_together": 9,
-          "shared_wins": 4,
-          "win_rate": 44.4
-        },
-        {
-          "id": 10,
-          "name": "Waro",
-          "games_together": 7,
+          "id": 252,
+          "name": "pnanrkotikivj",
+          "games_together": 3,
           "shared_wins": 3,
-          "win_rate": 42.9
+          "win_rate": 100.0
         },
         {
-          "id": 425,
-          "name": "P0JIT0H",
-          "games_together": 6,
+          "id": 79,
+          "name": "ЖУМОНГ",
+          "games_together": 3,
           "shared_wins": 3,
-          "win_rate": 50.0
+          "win_rate": 100.0
         },
         {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 6,
+          "id": 207,
+          "name": "PIRO48",
+          "games_together": 4,
+          "shared_wins": 3,
+          "win_rate": 75.0
+        },
+        {
+          "id": 263,
+          "name": "wisp74rus",
+          "games_together": 4,
+          "shared_wins": 3,
+          "win_rate": 75.0
+        },
+        {
+          "id": 468,
+          "name": "-trickster-",
+          "games_together": 3,
           "shared_wins": 2,
-          "win_rate": 33.3
-        },
-        {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 5,
-          "shared_wins": 1,
-          "win_rate": 20.0
+          "win_rate": 66.7
         }
       ],
       "streaks": {
         "longest_win": 3,
-        "current_win": 1,
+        "current_win": 2,
         "longest_loss": 3
       },
       "recent_games": [
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "1",
+          "status": "Выгнан",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -9925,42 +10463,36 @@
           "faction": "Мафия",
           "role": "Дэмин Насс",
           "result": "Победа"
-        },
-        {
-          "game_id": "604",
-          "date": "2025-09-16",
-          "name": "Мафия 570, ФЕЙЛЕД. Уютный и простой сетос для лёгк...",
-          "day": "4",
-          "status": "Выгнан",
-          "faction": "Мафия",
-          "role": "Помраченная Авиана",
-          "result": "Победа"
         }
       ],
       "games_mastered": 0,
       "rank": 9,
       "is_top10": true,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 0,
+      "banished_rate": 33.3,
+      "loot_rate": 61.1,
+      "unique_setos": 17,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     },
     "484": {
       "id": 484,
       "name": "эквилибристика",
-      "games_total": 15,
-      "wins_total": 8,
-      "win_rate": 53.3,
+      "games_total": 17,
+      "wins_total": 9,
+      "win_rate": 52.9,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 10,
-          "wins": 4,
-          "win_rate": 40.0
+          "games": 11,
+          "wins": 5,
+          "win_rate": 45.5
         },
         {
           "name": "Мафия",
-          "games": 4,
+          "games": 5,
           "wins": 4,
-          "win_rate": 100.0
+          "win_rate": 80.0
         },
         {
           "name": "Маньяк",
@@ -10017,16 +10549,22 @@
           "games": 3,
           "wins": 3,
           "win_rate": 100.0
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 1,
+          "win_rate": 50.0
         }
       ],
       "statuses": [
         {
           "name": "Выгнан",
-          "count": 6
+          "count": 7
         },
         {
           "name": "Выживший",
-          "count": 5
+          "count": 6
         },
         {
           "name": "Убит мафией",
@@ -10034,43 +10572,29 @@
         }
       ],
       "day_stats": {
-        "with_day": 10,
-        "avg_day": 3.9,
+        "with_day": 11,
+        "avg_day": 3.73,
         "min_day": 1,
         "max_day": 8
       },
       "roles": {
         "by_faction": {
           "Маньяк": 1,
-          "Мафия": 4,
+          "Мафия": 5,
           "Мирный житель": 1
         },
-        "total": 6,
-        "mafia": 4,
+        "total": 7,
+        "mafia": 5,
         "active": 0,
         "maniac": 1
       },
       "partners": [
         {
-          "id": 465,
-          "name": "Lightovych",
-          "games_together": 8,
-          "shared_wins": 4,
-          "win_rate": 50.0
-        },
-        {
-          "id": 443,
-          "name": "Eva",
-          "games_together": 7,
+          "id": 252,
+          "name": "pnanrkotikivj",
+          "games_together": 3,
           "shared_wins": 3,
-          "win_rate": 42.9
-        },
-        {
-          "id": 10,
-          "name": "Waro",
-          "games_together": 6,
-          "shared_wins": 4,
-          "win_rate": 66.7
+          "win_rate": 100.0
         },
         {
           "id": 472,
@@ -10080,19 +10604,53 @@
           "win_rate": 80.0
         },
         {
-          "id": 295,
-          "name": "Leibster",
-          "games_together": 5,
+          "id": 212,
+          "name": "Francyz",
+          "games_together": 4,
           "shared_wins": 3,
-          "win_rate": 60.0
+          "win_rate": 75.0
+        },
+        {
+          "id": 425,
+          "name": "P0JIT0H",
+          "games_together": 4,
+          "shared_wins": 3,
+          "win_rate": 75.0
+        },
+        {
+          "id": 10,
+          "name": "Waro",
+          "games_together": 6,
+          "shared_wins": 4,
+          "win_rate": 66.7
         }
       ],
       "streaks": {
         "longest_win": 3,
-        "current_win": 3,
+        "current_win": 1,
         "longest_loss": 2
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "2",
+          "status": "Выгнан",
+          "faction": "Мафия",
+          "role": "Сэмюэль Бруклин «Водитель»",
+          "result": "Поражение"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -10122,33 +10680,17 @@
           "faction": "Мирный житель",
           "role": "Мирный житель",
           "result": "Победа"
-        },
-        {
-          "game_id": "607",
-          "date": "2025-10-27",
-          "name": "Мафия 573. Ночь Дочь Мечь | НОЧИ В 21:00 ПО МСК",
-          "day": "5",
-          "status": "Убит мафией",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
-        },
-        {
-          "game_id": "606",
-          "date": "2025-10-14",
-          "name": "Мафия 572. Под нами мель(лужи) | НОЧИ В 21:00 ПО М...",
-          "day": "1",
-          "status": "Убит мафией",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
         }
       ],
       "games_mastered": 0,
-      "rank": 13,
+      "rank": 11,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 9098,
+      "banished_rate": 41.2,
+      "loot_rate": 35.3,
+      "unique_setos": 15,
+      "title": "Мутант постодрочер",
+      "title_class": "post-mutant"
     },
     "485": {
       "id": 485,
@@ -10210,15 +10752,7 @@
         "active": 0,
         "maniac": 0
       },
-      "partners": [
-        {
-          "id": 468,
-          "name": "-trickster-",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        }
-      ],
+      "partners": [],
       "streaks": {
         "longest_win": 1,
         "current_win": 0,
@@ -10247,8 +10781,12 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 52,
+      "rank": 53,
       "is_top10": false,
+      "posts_count": 606,
+      "banished_rate": 0.0,
+      "loot_rate": 0.0,
+      "unique_setos": 2,
       "title": "Гость раздела",
       "title_class": "guest"
     },
@@ -10331,10 +10869,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 53,
+      "rank": 54,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 89,
+      "banished_rate": 100.0,
+      "loot_rate": 100.0,
+      "unique_setos": 2,
+      "title": "Жертва",
+      "title_class": "victim"
     },
     "487": {
       "id": 487,
@@ -10390,22 +10932,7 @@
         "active": 1,
         "maniac": 0
       },
-      "partners": [
-        {
-          "id": 135,
-          "name": "Bararym",
-          "games_together": 2,
-          "shared_wins": 0,
-          "win_rate": 0.0
-        },
-        {
-          "id": 295,
-          "name": "Leibster",
-          "games_together": 2,
-          "shared_wins": 0,
-          "win_rate": 0.0
-        }
-      ],
+      "partners": [],
       "streaks": {
         "longest_win": 0,
         "current_win": 0,
@@ -10434,8 +10961,12 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 54,
+      "rank": 55,
       "is_top10": false,
+      "posts_count": 125,
+      "banished_rate": 0.0,
+      "loot_rate": 50.0,
+      "unique_setos": 2,
       "title": "Гость раздела",
       "title_class": "guest"
     },
@@ -10486,22 +11017,7 @@
         "active": 0,
         "maniac": 0
       },
-      "partners": [
-        {
-          "id": 424,
-          "name": "KyKyLLLka",
-          "games_together": 2,
-          "shared_wins": 0,
-          "win_rate": 0.0
-        },
-        {
-          "id": 193,
-          "name": "Whats_Up4you",
-          "games_together": 2,
-          "shared_wins": 0,
-          "win_rate": 0.0
-        }
-      ],
+      "partners": [],
       "streaks": {
         "longest_win": 0,
         "current_win": 0,
@@ -10530,8 +11046,12 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 55,
+      "rank": 56,
       "is_top10": false,
+      "posts_count": 950,
+      "banished_rate": 50.0,
+      "loot_rate": 0.0,
+      "unique_setos": 2,
       "title": "Гость раздела",
       "title_class": "guest"
     },
@@ -10597,10 +11117,14 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 70,
+      "rank": 73,
       "is_top10": false,
-      "title": "Гость раздела",
-      "title_class": "guest"
+      "posts_count": 352,
+      "banished_rate": 100.0,
+      "loot_rate": 0.0,
+      "unique_setos": 1,
+      "title": "Жертва",
+      "title_class": "victim"
     },
     "490": {
       "id": 490,
@@ -10655,15 +11179,7 @@
         "active": 2,
         "maniac": 0
       },
-      "partners": [
-        {
-          "id": 302,
-          "name": "BRA_HAYFA",
-          "games_together": 2,
-          "shared_wins": 0,
-          "win_rate": 0.0
-        }
-      ],
+      "partners": [],
       "streaks": {
         "longest_win": 0,
         "current_win": 0,
@@ -10692,8 +11208,12 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 56,
+      "rank": 57,
       "is_top10": false,
+      "posts_count": 455,
+      "banished_rate": 0.0,
+      "loot_rate": 50.0,
+      "unique_setos": 2,
       "title": "Гость раздела",
       "title_class": "guest"
     },
@@ -10779,29 +11299,39 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 57,
+      "rank": 58,
       "is_top10": false,
+      "posts_count": 282,
+      "banished_rate": 0.0,
+      "loot_rate": 0.0,
+      "unique_setos": 2,
       "title": "Гость раздела",
       "title_class": "guest"
     },
     "492": {
       "id": 492,
       "name": "Nvrmnd",
-      "games_total": 5,
-      "wins_total": 2,
-      "win_rate": 40.0,
+      "games_total": 7,
+      "wins_total": 4,
+      "win_rate": 57.1,
       "factions": [
         {
           "name": "Мирный житель",
-          "games": 3,
-          "wins": 1,
-          "win_rate": 33.3
+          "games": 4,
+          "wins": 2,
+          "win_rate": 50.0
         },
         {
           "name": "Мафия",
           "games": 2,
           "wins": 1,
           "win_rate": 50.0
+        },
+        {
+          "name": "Актив",
+          "games": 1,
+          "wins": 1,
+          "win_rate": 100.0
         }
       ],
       "monthly": [
@@ -10816,15 +11346,21 @@
           "games": 3,
           "wins": 1,
           "win_rate": 33.3
+        },
+        {
+          "month": "2025-12",
+          "games": 2,
+          "wins": 2,
+          "win_rate": 100.0
         }
       ],
       "statuses": [
         {
-          "name": "Выгнан",
-          "count": 1
+          "name": "Выживший",
+          "count": 2
         },
         {
-          "name": "Выживший",
+          "name": "Выгнан",
           "count": 1
         },
         {
@@ -10838,31 +11374,57 @@
         {
           "name": "Умер",
           "count": 1
+        },
+        {
+          "name": "Убит мафией",
+          "count": 1
         }
       ],
       "day_stats": {
-        "with_day": 4,
-        "avg_day": 4.25,
+        "with_day": 5,
+        "avg_day": 4.0,
         "min_day": 2,
         "max_day": 8
       },
       "roles": {
         "by_faction": {
+          "Актив": 1,
           "Мафия": 2,
           "Мирный житель": 1
         },
-        "total": 3,
+        "total": 4,
         "mafia": 2,
-        "active": 0,
+        "active": 1,
         "maniac": 0
       },
       "partners": [
         {
-          "id": 443,
-          "name": "Eva",
+          "id": 250,
+          "name": "toouur",
           "games_together": 4,
-          "shared_wins": 1,
-          "win_rate": 25.0
+          "shared_wins": 3,
+          "win_rate": 75.0
+        },
+        {
+          "id": 469,
+          "name": "Aferus",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
+        },
+        {
+          "id": 269,
+          "name": "Fulelgupport",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
+        },
+        {
+          "id": 471,
+          "name": "Lorcer",
+          "games_together": 3,
+          "shared_wins": 2,
+          "win_rate": 66.7
         },
         {
           "id": 483,
@@ -10870,35 +11432,34 @@
           "games_together": 3,
           "shared_wins": 2,
           "win_rate": 66.7
-        },
-        {
-          "id": 432,
-          "name": "Shyrik",
-          "games_together": 3,
-          "shared_wins": 0,
-          "win_rate": 0.0
-        },
-        {
-          "id": 469,
-          "name": "Aferus",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
-        },
-        {
-          "id": 218,
-          "name": "Cryless",
-          "games_together": 2,
-          "shared_wins": 1,
-          "win_rate": 50.0
         }
       ],
       "streaks": {
         "longest_win": 2,
-        "current_win": 0,
+        "current_win": 2,
         "longest_loss": 2
       },
       "recent_games": [
+        {
+          "game_id": "612",
+          "date": "2025-12-19",
+          "name": "Мафия 578. Первая ИГРА DEDSHIP | НОЧИ В 21:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        },
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": "3",
+          "status": "Убит мафией",
+          "faction": "Актив",
+          "role": "Дозорный",
+          "result": "Победа"
+        },
         {
           "game_id": "610",
           "date": "2025-11-30",
@@ -10928,33 +11489,17 @@
           "faction": "Мирный житель",
           "role": "Мирный житель",
           "result": "Победа"
-        },
-        {
-          "game_id": "607",
-          "date": "2025-10-27",
-          "name": "Мафия 573. Ночь Дочь Мечь | НОЧИ В 21:00 ПО МСК",
-          "day": null,
-          "status": "Выживший",
-          "faction": "Мафия",
-          "role": "Денна, Морд-Сит",
-          "result": "Победа"
-        },
-        {
-          "game_id": "606",
-          "date": "2025-10-14",
-          "name": "Мафия 572. Под нами мель(лужи) | НОЧИ В 21:00 ПО М...",
-          "day": "2",
-          "status": "Выгнан",
-          "faction": "Мирный житель",
-          "role": "Мирный житель",
-          "result": "Поражение"
         }
       ],
       "games_mastered": 0,
-      "rank": 39,
+      "rank": 32,
       "is_top10": false,
-      "title": "Игрок года",
-      "title_class": ""
+      "posts_count": 1348,
+      "banished_rate": 14.3,
+      "loot_rate": 42.9,
+      "unique_setos": 7,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     },
     "493": {
       "id": 493,
@@ -11018,8 +11563,12 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 71,
+      "rank": 74,
       "is_top10": false,
+      "posts_count": 0,
+      "banished_rate": 0.0,
+      "loot_rate": 100.0,
+      "unique_setos": 1,
       "title": "Гость раздела",
       "title_class": "guest"
     },
@@ -11085,10 +11634,85 @@
         }
       ],
       "games_mastered": 0,
-      "rank": 72,
+      "rank": 75,
       "is_top10": false,
+      "posts_count": 127,
+      "banished_rate": 0.0,
+      "loot_rate": 0.0,
+      "unique_setos": 1,
       "title": "Гость раздела",
       "title_class": "guest"
+    },
+    "495": {
+      "id": 495,
+      "name": "InRo",
+      "games_total": 1,
+      "wins_total": 1,
+      "win_rate": 100.0,
+      "factions": [
+        {
+          "name": "Мирный житель",
+          "games": 1,
+          "wins": 1,
+          "win_rate": 100.0
+        }
+      ],
+      "monthly": [
+        {
+          "month": "2025-12",
+          "games": 1,
+          "wins": 1,
+          "win_rate": 100.0
+        }
+      ],
+      "statuses": [
+        {
+          "name": "Выживший",
+          "count": 1
+        }
+      ],
+      "day_stats": {
+        "with_day": 0,
+        "avg_day": null,
+        "min_day": null,
+        "max_day": null
+      },
+      "roles": {
+        "by_faction": {
+          "Мирный житель": 1
+        },
+        "total": 1,
+        "mafia": 0,
+        "active": 0,
+        "maniac": 0
+      },
+      "partners": [],
+      "streaks": {
+        "longest_win": 1,
+        "current_win": 1,
+        "longest_loss": 0
+      },
+      "recent_games": [
+        {
+          "game_id": "611",
+          "date": "2025-12-07",
+          "name": "Мафия 577.ВТОРАЯ ИГРА CLOWNSHIP | НОЧИ В 20:00",
+          "day": null,
+          "status": "Выживший",
+          "faction": "Мирный житель",
+          "role": "Мирный житель",
+          "result": "Победа"
+        }
+      ],
+      "games_mastered": 0,
+      "rank": 76,
+      "is_top10": false,
+      "posts_count": 0,
+      "banished_rate": 0.0,
+      "loot_rate": 0.0,
+      "unique_setos": 1,
+      "title": "Легенда раздела",
+      "title_class": "legend"
     }
   }
 }

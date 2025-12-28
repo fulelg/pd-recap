@@ -278,6 +278,35 @@
             border: 1px solid rgba(250, 204, 21, 0.4);
         }
 
+        .games-intro-section {
+            margin-top: 48px;
+            padding: 40px 32px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(22, 163, 74, 0.08));
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            text-align: center;
+        }
+
+        .games-intro-section h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        .games-intro-section h2 strong {
+            color: #4ade80;
+            font-size: 2.2rem;
+        }
+
+        .games-intro-section p {
+            font-size: 1.1rem;
+            color: var(--muted);
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
         .title-section {
             margin-top: 40px;
             text-align: center;
@@ -329,6 +358,34 @@
             box-shadow: 0 8px 32px rgba(59, 130, 246, 0.3);
         }
 
+        /* Мутант постодрочер - яркий фиолетово-розовый */
+        .title-section.post-mutant {
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.5), rgba(219, 39, 119, 0.35));
+            border-color: rgba(244, 114, 182, 0.8);
+            box-shadow: 0 8px 32px rgba(236, 72, 153, 0.3);
+        }
+
+        /* Цель теневой координации - темный фиолетовый */
+        .title-section.shadow-target {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.5), rgba(67, 56, 202, 0.35));
+            border-color: rgba(129, 140, 248, 0.8);
+            box-shadow: 0 8px 32px rgba(79, 70, 229, 0.3);
+        }
+
+        /* Сердце раздела - яркий розово-красный */
+        .title-section.heart {
+            background: linear-gradient(135deg, rgba(244, 63, 94, 0.5), rgba(225, 29, 72, 0.35));
+            border-color: rgba(251, 113, 133, 0.8);
+            box-shadow: 0 8px 32px rgba(244, 63, 94, 0.3);
+        }
+
+        /* Попущ - серый, приглушенный */
+        .title-section.popush {
+            background: linear-gradient(135deg, rgba(71, 85, 105, 0.4), rgba(51, 65, 85, 0.3));
+            border-color: rgba(148, 163, 184, 0.6);
+            box-shadow: 0 8px 32px rgba(71, 85, 105, 0.2);
+        }
+
         /* Игрок года - яркий оранжево-розовый */
         .title-section.player-year {
             background: linear-gradient(135deg, rgba(251, 146, 60, 0.5), rgba(249, 115, 22, 0.35));
@@ -367,6 +424,22 @@
 
         .title-section.tablet h2 {
             color: #93c5fd;
+        }
+
+        .title-section.post-mutant h2 {
+            color: #f9a8d4;
+        }
+
+        .title-section.shadow-target h2 {
+            color: #a5b4fc;
+        }
+
+        .title-section.heart h2 {
+            color: #fda4af;
+        }
+
+        .title-section.popush h2 {
+            color: #94a3b8;
         }
 
         .title-section.player-year h2 {
@@ -437,6 +510,42 @@
             text-shadow: 0 0 30px rgba(96, 165, 250, 0.5);
         }
 
+        /* Мутант постодрочер - яркий фиолетово-розовый градиент */
+        .title-section.post-mutant h1 {
+            background: linear-gradient(135deg, #fce7f3, #f9a8d4, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(244, 114, 182, 0.5);
+        }
+
+        /* Цель теневой координации - темный фиолетовый градиент */
+        .title-section.shadow-target h1 {
+            background: linear-gradient(135deg, #e0e7ff, #a5b4fc, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(129, 140, 248, 0.5);
+        }
+
+        /* Сердце раздела - яркий розово-красный градиент */
+        .title-section.heart h1 {
+            background: linear-gradient(135deg, #ffe4e6, #fda4af, #fb7185);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(251, 113, 133, 0.5);
+        }
+
+        /* Попущ - серый, приглушенный градиент */
+        .title-section.popush h1 {
+            background: linear-gradient(135deg, #f1f5f9, #cbd5e1, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 20px rgba(148, 163, 184, 0.3);
+        }
+
         /* Игрок года - яркий оранжево-розовый градиент */
         .title-section.player-year h1 {
             background: linear-gradient(135deg, #fed7aa, #fdba74, #fb923c);
@@ -478,6 +587,22 @@
 
         .title-section.tablet .title-description {
             color: #bfdbfe;
+        }
+
+        .title-section.post-mutant .title-description {
+            color: #fbcfe8;
+        }
+
+        .title-section.shadow-target .title-description {
+            color: #c7d2fe;
+        }
+
+        .title-section.heart .title-description {
+            color: #fecdd3;
+        }
+
+        .title-section.popush .title-description {
+            color: #cbd5e1;
         }
 
         .title-section.player-year .title-description {
@@ -868,13 +993,15 @@
 
         function getTitleDescription(title) {
             const descriptions = {
-                'Легенда раздела': 'Твой общий винрейт 55% и выше — ты настоящий мастер игры! Показываешь стабильно высокие результаты и умеешь побеждать.',
-                'Жертва': 'У тебя самый высокий процент выгонов на дневном голосовании. Тебя чаще всего отправляли в отставку, но ты не сдавался!',
-                'Мэр этого города': 'Лучший винрейт на роли мирного жителя (минимум 10 игр). Ты мастер выживания и логики, когда играешь за мирных!',
-                'Гость раздела': 'Сыграл меньше 5 игр за год. Ты только начинаешь свой путь в мафии — впереди ещё много интересного!',
-                'Везунчик лаки': 'У тебя самый длинный винстрик за год. Ты знаешь секрет победы и умеешь держать удачу!',
                 'Табличник': 'Провёл больше всего игр на ведущем. Ты — сердце раздела, без тебя игры бы не состоялись!',
-                'Игрок года': 'Активный участник раздела, который провёл год в мафии. Каждая игра — это опыт, каждая победа — достижение!'
+                'Жертва': 'Процент выгона на дневном больше 55%. Тебя чаще всего отправляли в отставку, но ты не сдавался!',
+                'Мэр этого города': 'Ты в топ-5 по винрейту на мирном жителе (минимум 6 игр). Ты мастер выживания и логики, когда играешь за мирных!',
+                'Легенда раздела': 'Твой общий винрейт 55% и выше — ты настоящий мастер игры! Показываешь стабильно высокие результаты и умеешь побеждать.',
+                'Мутант постодрочер': 'Оставил больше 8000 постов за год. Ты настоящий мастер общения и обсуждений!',
+                'Цель теневой координации': 'Процент лута ролей меньше 35% (при выборке больше 4 игр). Тебя редко выбивают рано — ты умеешь выживать!',
+                'Сердце раздела': '10 или больше игр в разделе за год. Ты активный участник сообщества, каждая игра — это опыт!',
+                'Гость раздела': 'Меньше 4 игр за год. Ты только начинаешь свой путь в мафии — впереди ещё много интересного!',
+                'Попущ': 'В этом году ты ничем не запомнился. Но это не значит, что в следующем году не будет новых достижений!'
             };
             return descriptions[title] || 'Ты провёл год в мафии, и это уже достижение!';
         }
@@ -1060,18 +1187,18 @@
           </div>
         </header>
 
+        <section class="games-intro-section">
+          <h2>Вы провели с разделом <strong>${player.games_total}</strong> ${player.games_total === 1 ? 'игру' : player.games_total < 5 ? 'игры' : 'игр'} за год</h2>
+          <p>Какие-то игры были изматывающими, какие-то лёгкими, но мы благодарны, что вы провели их с нами.</p>
+        </section>
+
         <section class="title-section ${titleClass}">
-          <h2>КТО ТЫ ПО ИТОГАМ ГОДА В МАФИИ</h2>
-          <h1>${escapeHtml(player.title || 'Еще не определился')}</h1>
-          <p class="title-description">${escapeHtml(getTitleDescription(player.title || 'Еще не определился'))}</p>
+          <h2>Ваше звание по результатам сыгранных игр</h2>
+          <h1>${escapeHtml(player.title || 'Попущ')}</h1>
+          <p class="title-description">${escapeHtml(getTitleDescription(player.title || 'Попущ'))}</p>
         </section>
 
         <section class="stat-grid">
-          <div class="stat-card">
-            <h3>Сыграно игр</h3>
-            <strong>${player.games_total}${top10Badge}</strong>
-            <p class="muted">Всего матчей за год</p>
-          </div>
           <div class="stat-card">
             <h3>Винрейт общий</h3>
             <strong>${player.win_rate.toFixed(0)}%</strong>
@@ -1096,6 +1223,11 @@
             <h3>Проведено игр</h3>
             <strong>${player.games_mastered || 0}</strong>
             <p class="muted">В качестве ведущего</p>
+          </div>
+          <div class="stat-card">
+            <h3>Уникальных сетосов</h3>
+            <strong>${player.unique_setos || 0}</strong>
+            <p class="muted">Сыграл в ${player.unique_setos || 0} ${player.unique_setos === 1 ? 'уникальном сеттинге' : player.unique_setos < 5 ? 'уникальных сеттингах' : 'уникальных сеттингах'}</p>
           </div>
         </section>
 
