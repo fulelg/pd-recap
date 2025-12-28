@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Твой рекап в мафии на ПД за 2025</title>
     <style>
         :root {
@@ -27,6 +28,8 @@
             background: radial-gradient(120% 120% at 0% 0%, #1e293b 0%, #020617 55%, #000 100%);
             min-height: 100vh;
             padding: 60px 24px 120px;
+            position: relative;
+            overflow-x: hidden;
         }
 
         h1,
@@ -41,6 +44,8 @@
         .container {
             max-width: 1040px;
             margin: 0 auto;
+            position: relative;
+            z-index: 10;
         }
 
         .form-section {
@@ -555,6 +560,59 @@
             text-shadow: 0 0 30px rgba(253, 164, 175, 0.5);
         }
 
+        .title-section .player-name-header {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        .title-section.legend .player-name-header {
+            color: #e9d5ff;
+        }
+
+        .title-section.victim .player-name-header {
+            color: #fee2e2;
+        }
+
+        .title-section.mayor .player-name-header {
+            color: #dcfce7;
+        }
+
+        .title-section.guest .player-name-header {
+            color: #f1f5f9;
+        }
+
+        .title-section.lucky .player-name-header {
+            color: #fef9c3;
+        }
+
+        .title-section.tablet .player-name-header {
+            color: #dbeafe;
+        }
+
+        .title-section.post-mutant .player-name-header {
+            color: #fce7f3;
+        }
+
+        .title-section.shadow-target .player-name-header {
+            color: #e0e7ff;
+        }
+
+        .title-section.heart .player-name-header {
+            color: #ffe4e6;
+        }
+
+        .title-section.popush .player-name-header {
+            color: #f1f5f9;
+        }
+
+        .title-section.player-year .player-name-header {
+            color: #fed7aa;
+        }
+
         .title-section .title-description {
             margin-top: 20px;
             font-size: 1.1rem;
@@ -676,6 +734,32 @@
 
         .section.recent-section h2 {
             color: #a5b4fc;
+        }
+
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 0 -16px;
+            padding: 0 16px;
+        }
+
+        .table-wrapper::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .table-wrapper::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.3);
+            border-radius: 4px;
+        }
+
+        .table-wrapper::-webkit-scrollbar-thumb {
+            background: rgba(148, 163, 184, 0.4);
+            border-radius: 4px;
+        }
+
+        .table-wrapper::-webkit-scrollbar-thumb:hover {
+            background: rgba(148, 163, 184, 0.6);
         }
 
         table {
@@ -897,24 +981,440 @@
             font-size: 0.85rem;
         }
 
-        @media (max-width: 600px) {
+        /* Новогодние анимации */
+        .snowflakes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.5em;
+            font-family: Arial, sans-serif;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            animation: snowfall linear infinite;
+        }
+
+        @keyframes snowfall {
+            0% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) translateX(50px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+            animation: twinkle 2s ease-in-out infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 0.3;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.5);
+            }
+        }
+
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: var(--primary);
+            position: absolute;
+            animation: confetti-fall 3s linear infinite;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        .sparkle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 50%;
+            box-shadow: 0 0 6px var(--primary);
+            animation: sparkle 1.5s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Анимация для карточек при появлении */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .recap-container > * {
+            opacity: 0;
+        }
+
+        .recap-container.active > * {
+            animation: fadeInUp 2.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .recap-container.active > *:nth-child(1) { animation-delay: 0.2s; }
+        .recap-container.active > *:nth-child(2) { animation-delay: 0.5s; }
+        .recap-container.active > *:nth-child(3) { animation-delay: 0.8s; }
+        .recap-container.active > *:nth-child(4) { animation-delay: 1.1s; }
+        .recap-container.active > *:nth-child(5) { animation-delay: 1.4s; }
+        .recap-container.active > *:nth-child(6) { animation-delay: 1.7s; }
+        .recap-container.active > *:nth-child(7) { animation-delay: 2.0s; }
+        .recap-container.active > *:nth-child(8) { animation-delay: 2.3s; }
+        .recap-container.active > *:nth-child(9) { animation-delay: 2.6s; }
+        .recap-container.active > *:nth-child(10) { animation-delay: 2.9s; }
+
+        /* Мобильная верстка */
+        @media (max-width: 768px) {
             body {
                 padding: 40px 16px 80px;
             }
 
+            .container {
+                max-width: 100%;
+            }
+
+            .form-section {
+                padding: 24px 20px;
+                border-radius: 20px;
+            }
+
+            .form-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .form-group {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 16px;
+            }
+
+            .form-group button {
+                width: 100%;
+            }
+
+            .hero {
+                flex-direction: column;
+            }
+
+            .hero-card {
+                min-width: 100%;
+                padding: 24px 20px;
+            }
+
             .hero-card h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero-meta {
+                font-size: 0.85rem;
+            }
+
+            .title-section {
+                padding: 32px 20px;
+                margin-top: 32px;
+            }
+
+            .title-section .player-name-header {
+                font-size: 1.1rem;
+                margin-bottom: 16px;
+            }
+
+            .title-section h2 {
+                font-size: 1rem;
+                line-height: 1.4;
+            }
+
+            .title-section h1 {
                 font-size: 2rem;
+            }
+
+            .title-section .title-description {
+                font-size: 0.95rem;
+            }
+
+            .stat-grid {
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                gap: 12px;
+                padding: 20px 16px;
+            }
+
+            .stat-card {
+                padding: 16px;
+            }
+
+            .stat-card h3 {
+                font-size: 0.8rem;
+            }
+
+            .stat-card strong {
+                font-size: 1.5rem;
+            }
+
+            .stat-card p.muted {
+                font-size: 0.75rem;
+            }
+
+            .section {
+                padding: 24px 16px;
+                margin-top: 32px;
+            }
+
+            .section h2 {
+                font-size: 1.3rem;
+                margin-bottom: 16px;
+            }
+
+            .table-wrapper {
+                margin: 0;
+                padding: 0;
+                overflow-x: visible;
+            }
+
+            table {
+                font-size: 0.8rem;
+                width: 100%;
+                display: table;
             }
 
             table th,
             table td {
-                padding: 12px 14px;
+                padding: 8px 4px;
+                font-size: 0.75rem;
+                white-space: normal;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+
+            table th:first-child,
+            table td:first-child {
+                padding-left: 12px;
+            }
+
+            table th:last-child,
+            table td:last-child {
+                padding-right: 12px;
+            }
+
+            /* Для числовых колонок */
+            table th.num,
+            table td.num {
+                white-space: nowrap;
+                text-align: right;
+                min-width: 50px;
+            }
+
+            /* Горизонтальный скролл для таблицы последних матчей */
+            .recent-section .table-wrapper {
+                margin: 0 -16px;
+                padding: 0 16px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .recent-section table {
+                min-width: 600px;
+            }
+
+            .recent-section table th,
+            .recent-section table td {
+                white-space: nowrap;
+                padding: 8px 6px;
+            }
+
+            .pills {
+                gap: 8px;
+            }
+
+            .pill {
+                padding: 8px 12px;
+                font-size: 0.85rem;
+            }
+
+            .status-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 12px;
+            }
+
+            .status-card {
+                padding: 14px;
+                font-size: 0.85rem;
+            }
+
+            .games-intro-section {
+                padding: 28px 20px;
+                margin-top: 32px;
+            }
+
+            .games-intro-section h2 {
+                font-size: 1.4rem;
+            }
+
+            .games-intro-section h2 strong {
+                font-size: 1.8rem;
+            }
+
+            .games-intro-section p {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 24px 12px 60px;
+            }
+
+            .form-section {
+                padding: 20px 16px;
+            }
+
+            .form-section h2 {
+                font-size: 1.3rem;
+            }
+
+            .hero-card h1 {
+                font-size: 1.5rem;
+            }
+
+            .title-section .player-name-header {
+                font-size: 1rem;
+                margin-bottom: 12px;
+            }
+
+            .title-section h1 {
+                font-size: 1.6rem;
+            }
+
+            .stat-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .section {
+                padding: 20px 12px;
+            }
+
+            .table-wrapper {
+                margin: 0;
+                padding: 0;
+                overflow-x: visible;
+            }
+
+            table {
+                font-size: 0.7rem;
+                width: 100%;
+                display: table;
+            }
+
+            table th,
+            table td {
+                padding: 6px 3px;
+                font-size: 0.65rem;
+                white-space: normal;
+                word-wrap: break-word;
+                line-height: 1.3;
+            }
+
+            /* Горизонтальный скролл для таблицы последних матчей */
+            .recent-section .table-wrapper {
+                margin: 0 -12px;
+                padding: 0 12px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .recent-section table {
+                min-width: 550px;
+            }
+
+            .recent-section table th,
+            .recent-section table td {
+                white-space: nowrap;
+                padding: 6px 4px;
+                font-size: 0.65rem;
+            }
+
+            table th:first-child,
+            table td:first-child {
+                padding-left: 8px;
+            }
+
+            table th:last-child,
+            table td:last-child {
+                padding-right: 8px;
+            }
+
+            /* Компактные заголовки */
+            table th {
+                font-size: 0.65rem;
+                padding: 6px 3px;
+            }
+
+            .status-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 
 <body>
+    <div class="snowflakes" id="snowflakes"></div>
+    <div class="stars" id="stars"></div>
     <div class="container">
         <section class="form-section">
             <h2>🎄 Твой рекап в мафии на ПД за 2025</h2>
@@ -1037,6 +1537,11 @@
             const html = generateRecapHTML(player);
             container.innerHTML = html;
             container.classList.add('active');
+
+            // Запускаем конфетти
+            setTimeout(() => {
+                createConfetti();
+            }, 300);
 
             // Прокручиваем к рекапу
             container.scrollIntoView({
@@ -1178,24 +1683,14 @@
             }
 
             return `
-        <header class="hero">
-          <div class="hero-card">
-            <h1>Holiday Recap 2025 · ${escapeHtml(player.name)}</h1>
-            <div class="hero-meta">
-              <span>🎄 Сезон игр 2025</span>
-            </div>
-          </div>
-        </header>
-
-        <section class="games-intro-section">
-          <h2>Вы провели с разделом <strong>${player.games_total}</strong> ${player.games_total === 1 ? 'игру' : player.games_total < 5 ? 'игры' : 'игр'} за год</h2>
-          <p>Какие-то игры были изматывающими, какие-то лёгкими, но мы благодарны, что вы провели их с нами.</p>
-        </section>
-
         <section class="title-section ${titleClass}">
-          <h2>Ваше звание по результатам сыгранных игр</h2>
+          <div class="player-name-header">${escapeHtml(player.name)}</div>
+          <h2>Вы провели с разделом <strong>${player.games_total}</strong> ${player.games_total === 1 ? 'игру' : player.games_total < 5 ? 'игры' : 'игр'} за год, и по итогам вы</h2>
           <h1>${escapeHtml(player.title || 'Попущ')}</h1>
           <p class="title-description">${escapeHtml(getTitleDescription(player.title || 'Попущ'))}</p>
+          <p class="title-description" style="margin-top: 24px;">
+            Какие-то игры были изматывающими, какие-то лёгкими, но мы благодарны, что вы провели их с нами.
+          </p>
         </section>
 
         <section class="stat-grid">
@@ -1238,19 +1733,21 @@
 
         <section class="section roles-section">
           <h2>🃏 Роли года</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Роль</th>
-                <th class="num">Игры</th>
-                <th class="num">Победы</th>
-                <th class="num">Win%</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${rolesRows}
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Роль</th>
+                  <th class="num">Игры</th>
+                  <th class="num">Победы</th>
+                  <th class="num">Win%</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${rolesRows}
+              </tbody>
+            </table>
+          </div>
         </section>
 
         <section class="section factions-section">
@@ -1262,19 +1759,21 @@
 
         <section class="section monthly-section">
           <h2>📈 Помесячная активность</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Месяц</th>
-                <th class="num">Игры</th>
-                <th class="num">Победы</th>
-                <th class="num">Win%</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${monthlyRows}
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Месяц</th>
+                  <th class="num">Игры</th>
+                  <th class="num">Победы</th>
+                  <th class="num">Win%</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${monthlyRows}
+              </tbody>
+            </table>
+          </div>
         </section>
 
         <section class="section status-section">
@@ -1290,41 +1789,45 @@
         ${partners.length > 0 ? `
         <section class="section partners-section">
           <h2>🤝 Праздничная пятёрка тиммейтов</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Игрок</th>
-                <th class="num">Совместных игр</th>
-                <th class="num">Побед</th>
-                <th class="num">Win%</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${partnerRows}
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Игрок</th>
+                  <th class="num">Совместных игр</th>
+                  <th class="num">Побед</th>
+                  <th class="num">Win%</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${partnerRows}
+              </tbody>
+            </table>
+          </div>
         </section>
         ` : ''}
 
         ${recentGames.length > 0 ? `
         <section class="section recent-section">
           <h2>📜 Последние матчи</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Дата</th>
-                <th>Игра</th>
-                <th>Роль</th>
-                <th>Фракция</th>
-                <th>Статус</th>
-                <th class="num">День</th>
-                <th>Итог</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${recentRows}
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Дата</th>
+                  <th>Игра</th>
+                  <th>Роль</th>
+                  <th>Фракция</th>
+                  <th>Статус</th>
+                  <th class="num">День</th>
+                  <th>Итог</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${recentRows}
+              </tbody>
+            </table>
+          </div>
         </section>
         ` : ''}
 
@@ -1458,11 +1961,70 @@
             });
         }
 
+        // Новогодние анимации
+        function createSnowflakes() {
+            const snowflakesContainer = document.getElementById('snowflakes');
+            if (!snowflakesContainer) return;
+
+            const snowflakeSymbols = ['❄', '❅', '❆', '✻', '✼', '✽'];
+            const numSnowflakes = window.innerWidth < 768 ? 30 : 50;
+
+            for (let i = 0; i < numSnowflakes; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflake.textContent = snowflakeSymbols[Math.floor(Math.random() * snowflakeSymbols.length)];
+                snowflake.style.left = Math.random() * 100 + '%';
+                snowflake.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                snowflake.style.animationDelay = Math.random() * 2 + 's';
+                snowflake.style.opacity = Math.random() * 0.5 + 0.5;
+                snowflakesContainer.appendChild(snowflake);
+            }
+        }
+
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            if (!starsContainer) return;
+
+            const numStars = window.innerWidth < 768 ? 30 : 50;
+
+            for (let i = 0; i < numStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 2 + 's';
+                star.style.animationDuration = (Math.random() * 2 + 1) + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        function createConfetti() {
+            // Создаем конфетти при генерации рекапа
+            const colors = ['#facc15', '#f59e0b', '#ef4444', '#10b981', '#3b82f6', '#8b5cf6'];
+            const numConfetti = 30;
+
+            for (let i = 0; i < numConfetti; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.animationDelay = Math.random() * 0.5 + 's';
+                confetti.style.animationDuration = (Math.random() * 1 + 2) + 's';
+                document.body.appendChild(confetti);
+
+                setTimeout(() => {
+                    confetti.remove();
+                }, 3000);
+            }
+        }
+
         // Загружаем данные при загрузке страницы
         window.addEventListener('DOMContentLoaded', () => {
             loadData().then(() => {
                 initAutocomplete();
             });
+            createSnowflakes();
+            createStars();
         });
     </script>
 </body>
