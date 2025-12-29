@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Твой рекап в мафии на ПД за 2025</title>
+    <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.min.js"></script>
     <style>
         :root {
             --bg: #0f172a;
@@ -981,6 +982,40 @@
             font-size: 0.85rem;
         }
 
+        .save-button-container {
+            margin-top: 40px;
+            text-align: center;
+            padding: 32px;
+        }
+
+        .save-button {
+            padding: 16px 32px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border: none;
+            border-radius: 16px;
+            color: #000;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 16px rgba(250, 204, 21, 0.3);
+        }
+
+        .save-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 24px rgba(250, 204, 21, 0.4);
+        }
+
+        .save-button:active {
+            transform: scale(0.98);
+        }
+
+        .save-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
         /* Новогодние анимации */
         .snowflakes {
             position: fixed;
@@ -1312,6 +1347,18 @@
             .games-intro-section p {
                 font-size: 0.95rem;
             }
+
+            .save-button-container {
+                padding: 24px 16px;
+                margin-top: 32px;
+            }
+
+            .save-button {
+                padding: 14px 28px;
+                font-size: 1rem;
+                width: 100%;
+                max-width: 400px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -1407,6 +1454,16 @@
 
             .status-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .save-button-container {
+                padding: 20px 12px;
+                margin-top: 24px;
+            }
+
+            .save-button {
+                padding: 12px 24px;
+                font-size: 0.95rem;
             }
         }
     </style>
@@ -1834,6 +1891,10 @@
         <footer>
           Работал за спасибо Fulelgupport и Dispersion
         </footer>
+
+        <div class="save-button-container">
+          <button class="save-button" onclick="saveRecapAsImage()">📸 Сохранить рекап как картинку</button>
+        </div>
       `;
         }
 
@@ -2015,6 +2076,64 @@
                 setTimeout(() => {
                     confetti.remove();
                 }, 3000);
+            }
+        }
+
+        // Функция для сохранения всей страницы как изображения
+        async function saveRecapAsImage() {
+            const button = document.querySelector('.save-button');
+            if (button) {
+                button.disabled = true;
+                button.textContent = 'Сохранение...';
+            }
+
+            try {
+                // Проверяем наличие библиотеки
+                if (typeof htmlToImage === 'undefined') {
+                    showError('Библиотека для сохранения не загружена. Обновите страницу.');
+                    if (button) {
+                        button.disabled = false;
+                        button.textContent = '📸 Сохранить рекап как картинку';
+                    }
+                    return;
+                }
+
+                // Скрываем форму ввода перед сохранением
+                const formSection = document.querySelector('.form-section');
+                const originalFormDisplay = formSection ? formSection.style.display : '';
+                if (formSection) formSection.style.display = 'none';
+
+                // Сохраняем всю страницу как изображение
+                const dataUrl = await htmlToImage.toPng(document.body, {
+                    backgroundColor: '#0f172a',
+                    quality: 1.0,
+                    pixelRatio: 2,
+                    width: document.body.scrollWidth,
+                    height: document.body.scrollHeight
+                });
+
+                // Восстанавливаем отображение формы
+                if (formSection) formSection.style.display = originalFormDisplay;
+
+                // Создаем ссылку для скачивания
+                const link = document.createElement('a');
+                link.href = dataUrl;
+                link.download = `recap-${Date.now()}.png`;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+
+                if (button) {
+                    button.disabled = false;
+                    button.textContent = '📸 Сохранить рекап как картинку';
+                }
+            } catch (error) {
+                console.error('Ошибка при сохранении рекапа:', error);
+                showError('Не удалось сохранить рекап. Попробуйте еще раз.');
+                if (button) {
+                    button.disabled = false;
+                    button.textContent = '📸 Сохранить рекап как картинку';
+                }
             }
         }
 
